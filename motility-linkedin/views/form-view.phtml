@@ -1,0 +1,62 @@
+<p>
+    <?php _e('Account #1:', 'motility'); ?>
+</p>
+<p>
+    <label for="<?php echo $this->get_field_id('apikey'); ?>"><?php _e('API Key:', 'motility'); ?></label> 
+    <input class="widefat" id="<?php echo $this->get_field_id('apikey'); ?>" name="<?php echo $this->get_field_name('apikey'); ?>" type="text" value="<?php echo (!empty($instance['apikey'])) ? esc_attr($instance['apikey']) : ''; ?>" />
+</p>
+<p>
+    <label for="<?php echo $this->get_field_id('secretkey'); ?>"><?php _e('Secret Key:', 'motility'); ?></label> 
+    <input class="widefat" id="<?php echo $this->get_field_id('secretkey'); ?>" name="<?php echo $this->get_field_name('secretkey'); ?>" type="text" value="<?php echo (!empty($instance['secretkey'])) ? esc_attr($instance['secretkey']) : ''; ?>" />
+</p>
+<p>
+    <label for="<?php echo $this->get_field_id('oauthtoken'); ?>"><?php _e('OAuth User Token:', 'motility'); ?></label> 
+    <input class="widefat" id="<?php echo $this->get_field_id('oauthtoken'); ?>" name="<?php echo $this->get_field_name('oauthtoken'); ?>" type="text" value="<?php echo (!empty($instance['oauthtoken'])) ? esc_attr($instance['oauthtoken']) : ''; ?>" />
+</p>
+<p>
+    <label for="<?php echo $this->get_field_id('oauthsecret'); ?>"><?php _e('OAuth User Secret:', 'motility'); ?></label> 
+    <input class="widefat" id="<?php echo $this->get_field_id('oauthsecret'); ?>" name="<?php echo $this->get_field_name('oauthsecret'); ?>" type="text" value="<?php echo (!empty($instance['oauthsecret'])) ? esc_attr($instance['oauthsecret']) : ''; ?>" />
+</p>
+<p>
+    <label for="<?php echo $this->get_field_id('feed'); ?>"><?php _e('Feed Type:', 'motility'); ?></label> 
+    <select name="<?php echo $this->get_field_name('feed'); ?>">
+        <option value="SHAR" <?php if($instance['feed'] == 'SHAR'){ echo 'selected="selected"'; } ?>>Share Posts</option>
+        <option value="JOBS" <?php if($instance['feed'] == 'JOBS'){ echo 'selected="selected"'; } ?>>Job Posts</option>
+    </select>
+</p>
+
+<p><hr></p>
+<p>
+    <?php _e('Account #2:', 'motility'); ?>
+</p>
+<p>
+    <label for="<?php echo $this->get_field_id('apikey2'); ?>"><?php _e('API Key:', 'motility'); ?></label> 
+    <input class="widefat" id="<?php echo $this->get_field_id('apikey2'); ?>" name="<?php echo $this->get_field_name('apikey2'); ?>" type="text" value="<?php echo (!empty($instance['apikey2'])) ? esc_attr($instance['apikey2']) : ''; ?>" />
+</p>
+<p>
+    <label for="<?php echo $this->get_field_id('secretkey2'); ?>"><?php _e('Secret Key:', 'motility'); ?></label> 
+    <input class="widefat" id="<?php echo $this->get_field_id('secretkey2'); ?>" name="<?php echo $this->get_field_name('secretkey2'); ?>" type="text" value="<?php echo (!empty($instance['secretkey2'])) ? esc_attr($instance['secretkey2']) : ''; ?>" />
+</p>
+<p>
+    <label for="<?php echo $this->get_field_id('oauthtoken2'); ?>"><?php _e('OAuth User Token:', 'motility'); ?></label> 
+    <input class="widefat" id="<?php echo $this->get_field_id('oauthtoken2'); ?>" name="<?php echo $this->get_field_name('oauthtoken2'); ?>" type="text" value="<?php echo (!empty($instance['oauthtoken2'])) ? esc_attr($instance['oauthtoken2']) : ''; ?>" />
+</p>
+<p>
+    <label for="<?php echo $this->get_field_id('oauthsecret2'); ?>"><?php _e('OAuth User Secret:', 'motility'); ?></label> 
+    <input class="widefat" id="<?php echo $this->get_field_id('oauthsecret2'); ?>" name="<?php echo $this->get_field_name('oauthsecret2'); ?>" type="text" value="<?php echo (!empty($instance['oauthsecret2'])) ? esc_attr($instance['oauthsecret2']) : ''; ?>" />
+</p>
+<p>
+    <label for="<?php echo $this->get_field_id('feed2'); ?>"><?php _e('Feed Type:', 'motility'); ?></label> 
+    <select name="<?php echo $this->get_field_name('feed2'); ?>">
+        <option value="SHAR" <?php if($instance['feed2'] == 'SHAR'){ echo 'selected="selected"'; } ?>>Share Posts</option>
+        <option value="JOBS" <?php if($instance['feed2'] == 'JOBS'){ echo 'selected="selected"'; } ?>>Job Posts</option>
+    </select>
+</p>
+<p><hr></p>
+<p>
+    <?php _e('Filters:', 'motility'); ?>
+</p>
+<p>
+    <textarea style="width:100%;height:150px" id="<?php echo $this->get_field_id('filters'); ?>" name="<?php echo $this->get_field_name('filters'); ?>"><?php echo stripslashes($instance['filters']); ?></textarea>
+    <br>***Note: 1 line per full name, no space, separate first name and last name with comma (,).
+</p>

@@ -1,0 +1,40 @@
+.jobItems { display:block;  min-height: 370px;}
+.jobItem { display:none; position:absolute; }
+.jobPagination {
+    clear: both;
+    display: table;
+    margin: 0 auto !important;
+}
+.jobPagination li {
+    color: #276FA5;
+    display: inline;
+    float: left;
+}
+.jobPagination a {
+    color: #276FA5;
+    display: block;
+    line-height: 20px;
+    text-align: center;
+    width: 20px;
+}
+
+.jobPagination span {
+    display: block;
+    color: #276FA5;
+    line-height: 20px;
+    text-align: center;
+    width: 50px;
+    cursor: pointer;
+}
+
+.jobPagination span.next {
+    width: 48px;
+}
+
+.jobPagination a:hover, .jobPagination span:hover {
+    color: #f8981d;
+}
+
+.jobPagination a.current {
+    background: none repeat scroll 0 0 #EBEBEB;
+}

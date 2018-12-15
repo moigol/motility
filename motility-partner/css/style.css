@@ -1,0 +1,4 @@
+.partnerItem { display:block;padding-bottom: 50px;}
+.partnerImg { display:block; width:297px; border: 1px solid #cacaca; float: left;padding: 10px 0; }
+.partnerImg img { display:block; margin: 0 auto; }
+.partnerContent {display: block;float: left;padding-left: 18px;width: 320px;}

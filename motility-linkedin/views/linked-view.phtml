@@ -1,0 +1,72 @@
+<style>
+.feedcontent .detail img { margin-right:10px; }
+ul.metaLinks li { float: left;list-style-type: disc;margin-left: 24px; }
+ul.metaLinks li:first-child { list-style-type: none;margin-left: 0; }
+ul.metaLinks li a { color:#656565; }
+</style>
+<script language="javascript" type="text/javascript">
+var win=null;
+function NewWindow(mypage,myname,w,h,scroll,pos){
+if(pos=="random"){LeftPosition=(screen.width)?Math.floor(Math.random()*(screen.width-w)):100;TopPosition=(screen.height)?Math.floor(Math.random()*((screen.height-h)-75)):100;}
+if(pos=="center"){LeftPosition=(screen.width)?(screen.width-w)/2:100;TopPosition=(screen.height)?(screen.height-h)/2:100;}
+else if((pos!="center" && pos!="random") || pos==null){LeftPosition=0;TopPosition=20}
+settings='width='+w+',height='+h+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',location=no,directories=no,status=no,menubar=no,toolbar=no,resizable=no';
+win=window.open(mypage,myname,settings);}
+// -->
+</script>
+<?php 
+if($person)
+{
+    $people = $person->updateContent->person;
+    $metaInfo = $person->updateContent->person->currentShare->content;
+    ?>
+    <div class="author-avatar">
+        <img src="<?php echo $people->pictureUrl; ?>" />
+    </div>
+    <div class="feedcontent">
+        <p>
+            <span class="author-name"><?php echo $people->firstName.' '.$people->lastName?></span>
+            <span class="checkout"><?php echo $people->currentShare->comment; ?></span>
+            <a href="<?php echo $metaInfo->shortenedUrl; ?>"><?php echo $metaInfo->shortenedUrl; ?></a> 
+            <span class="title"><?php echo $metaInfo->title; ?></span>
+            <span class="detail">
+                <img src="<?php echo $metaInfo->submittedImageUrl; ?>" width="100" align="left"/>
+                <?php echo $metaInfo->description; ?>
+            </span>
+        </p>
+        <p class="feedlinks">
+            <?php 
+            $likes =  isset($person->likes) && !empty($person->likes) ? $person->likes : false;
+            $likeView = '';
+            $nonce = wp_create_nonce('my-nonce');
+            $likeLink = 'https://www.linkedin.com/uas/oauth2/authorization?response_type=code&client_id='.$instance['apikey'].'&scope=r_fullprofile%20rw_nus%20r_network&state=STATE'.$nonce.'&redirect_uri='.  get_option('siteurl').'/?motilityAction=doLike';
+            if($likes)
+            {
+                if($likes->_total > 0) { $likeCount = ' ('.$likes->_total.')'; } else { $likeCount = ''; }
+                if($person->isLikable) { $likeView = '<li><a href="'.$likeLink.'" onclick="NewWindow(this.href,\'template_window\',\'550\',\'600\',\'yes\',\'center\');return false" onfocus="this.blur()">Like'.$likeCount .'</a></li>'; } else { $likeView = '<li>Like'.$likeCount.'</li>'; } 
+            }
+            else
+            {
+                if($person->isLikable) { $likeView = '<li><a href="'.$likeLink.'" onclick="NewWindow(this.href,\'template_window\',\'550\',\'600\',\'yes\',\'center\');return false" onfocus="this.blur()">Like</a></li>'; }
+            }
+            ?>
+            <ul class="metaLinks">
+                <?php //echo $likeView; ?>
+
+                <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=<?php echo $metaInfo->submittedUrl; ?>&title=<?php echo $metaInfo->title; ?>&summary=<?php echo $metaInfo->description;  ?>&source=<?php echo $metaInfo->submittedUrl; ?>" rel="nofollow" onclick="NewWindow(this.href,'template_window','550','400','yes','center');return false" onfocus="this.blur()">Share</a></li>
+                <li><?php echo motility_smartdate($person->timestamp / 1000);?></li>
+            </ul>
+        </p>
+    </div> 
+<?php 
+} 
+else
+{
+?>
+    <div class="feedcontent">
+        <p>
+            <img src="http://s.c.lnkd.licdn.com/scds/common/u/img/logos/LinkedIn_logo_white_92x22_v2.png" /> <br><br>
+            <?php _e('Der er ingen opdateringer endnu ...'); ?>
+        </p>
+    </div>
+<?php } ?>
