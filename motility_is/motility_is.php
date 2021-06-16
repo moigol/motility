@@ -6,11 +6,11 @@
  
 /*
 Plugin Name: Infusionsoft Integrator
-Plugin URI: http://cutearts.org
+Plugin URI: https://www.movidev.com/
 Description: Infusionsoft Integrator
 Version: 1.0
-Author: Moises
-Author URI: http://cutearts.org
+Author: Mo G
+Author URI: https://www.movidev.com/
 */
 
 global $motilityIS;
@@ -62,7 +62,7 @@ class motilityIS extends iSDK {
 
         // Plugin URL / Path
         define( 'MTIS_DIR', plugin_dir_path( __FILE__ ) );
-        define( 'MTIS_URL', plugins_url( 'uncannyowl_is', __FILE__ ) );
+        define( 'MTIS_URL', plugins_url( 'motility_is', __FILE__ ) );
 
         // JS and CSS URL
         define( 'MTIS_JS', MTIS_URL .'/js/' );

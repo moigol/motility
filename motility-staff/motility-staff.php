@@ -2,9 +2,9 @@
 /**
  * Plugin Name: MotilityStaff
  * Description: MotilityStaff View, put this shortcode '[staffs]' on the post wysiwyg where you want the staffs to appear.
- * Author: Mo
+ * Author: Mo G
  * Version: 1.00
- * Author URI: http://www.cutearts.org
+ * Author URI: https://www.movidev.com/
 */
 
 if(!class_exists('MotilityStaff'))

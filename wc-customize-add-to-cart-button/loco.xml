@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bundle name="Customize Add to Cart Button">
+  <domain name="customize-add-to-cart-button">
+    <project name="Customize Add to Cart Button" slug="customize-add-to-cart-button">
+      <source>
+        <directory>.</directory>
+      </source>
+      <target>
+        <directory>lang</directory>
+      </target>
+      <template>
+        <file>lang/customize-add-to-cart-button.pot</file>
+      </template>
+    </project>
+  </domain>
+</bundle>
