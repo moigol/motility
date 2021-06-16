@@ -1,0 +1,1060 @@
+/* 
+	Theme Name: Victoria McDonald Fitness.
+	Author: Creative Impression
+	Author URI: www.creativeimpression.com
+	Description: Custom theme for Victoria McDonald Fitness.
+*/
+
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	outline: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size:14px;
+	text-decoration: none;
+	line-height: 24px;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+li {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clear { 
+	clear:both;
+}
+
+p {
+    padding: 10px 0 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+strong {
+    font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Playfair Display', serif;
+}
+
+.h1, h1 {
+    font-size: 50px;
+}
+
+.h2, h2 {
+    font-size: 40px;
+}
+
+img {
+    width: 100%;
+}
+
+a.btn {
+    border-radius: 35px;
+    font-weight: 700;
+    padding: 10px 25px;
+    margin: 10px 0;
+}
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+}
+
+img.alignright {
+    float: right;
+    width: unset;
+}
+
+img.alignleft {
+    float: left;
+    width: unset;
+}
+
+/* ------------------------------------------------------- */
+/* HEADER */
+header {
+    z-index: 99;
+    position: relative;
+}
+
+.top {
+    background-color: #394452;
+}
+
+.top .admin {
+    vertical-align: middle;
+    line-height: 39px;
+}
+
+.top .social {
+    text-align: center;
+}
+
+.top .social a.media {
+    vertical-align: middle;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 5px 4px;
+}
+
+.top .social a.media:hover {
+    color: #ed2078;
+}
+
+.top .admin .email a:hover, .top .admin .phone a:hover, .info a:hover {
+    text-decoration: none;
+}
+
+.top .admin .email a:hover, .top .admin .phone a:hover {
+    color: #ed2078;
+}
+
+.top .phone, .top .email, .top .login {
+    text-align: right;
+}
+
+.top .admin .email a, .top .admin .phone a, .info a {
+    color: #ffffff;
+	font-size: 13px;
+}
+
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary, .btn-primary{
+    background-color: #ed1f79;
+    border-color: #bc135d;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.login .btn {
+    border-radius: 0;
+	margin: 0;
+}
+
+.login .btn a:hover {
+    text-decoration: none;
+}
+
+.login a {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.header {
+    background-color: #fffffff0;
+    box-shadow: 0 2px 4px -2px #525252;
+    min-height: 112px;
+}
+
+.logo {
+    max-width: 400px;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.logo img {
+    width: 100%;
+}
+
+nav .container-fluid, .navbar-collapse {
+	padding: 0;
+}
+
+.navbar-nav {
+    float: right;
+}
+
+.navbar-nav>li>a {
+    color: #000000;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+	padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.navbar-nav>li.vid-tab {
+    background-color: #ed2078 !important;
+}
+
+.navbar-nav>li.vid-tab a {
+    color: #ffffff;
+    margin-top: 2px;
+}
+
+.navbar-nav>li.vid-tab a:hover {
+    color: #000000;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #ed2078;
+}
+
+.btn-link:focus, .btn-link:hover {
+    color: #ed2078;
+}
+
+ul.dropdown-menu li {
+    list-style-type: unset;
+}
+
+.dropdown-menu li a {
+    text-transform: uppercase;
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee !important;
+}
+
+.dropdown-menu li:last-child a {
+    border-bottom: 0 !important;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover, .nav>li>a:focus, .nav>li>a:hover {
+    border-bottom: 2px solid #ed2078;
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.banner-text .btn-primary.active:hover {
+    background-color: #ffffff;
+    border-color: #ed2078;
+    color: #ed2078;
+}
+/* ------------------------------------------------------- */
+/* BANNER */
+section.banner {
+    margin-top: -112px;
+}
+
+.banner-box {
+    margin-top: 112px;
+}
+
+.banner-img {
+    max-width: 500px;
+    display: block;
+    width: 100%;
+    height: 600px;
+    padding-left: 20px;
+    margin-top: 72px;
+}
+
+.banner-img img {
+    height: 100%;
+}
+
+.banner-text {
+    padding: 40px 50px 100px 100px;
+	color: #ffffff;
+    height: 500px;
+}
+
+.banner-text span {
+    font-size: 80px;
+    line-height: 90px;
+    font-family: 'Playfair Display', serif;
+	display: block;
+}
+
+.banner-text h1 {
+    margin-top: 0;
+}
+
+.banner-text div, .about-text div, .plan-content div, .testimony-box .content div {
+    padding: 20px 0 30px;
+}
+
+.banner-text a.btn {
+    border-radius: 35px;
+}
+
+.banner-text a.btn {
+    background-color: #000000;
+}
+
+.slick-dots {
+    bottom: 53px;
+    padding-left: 95px;
+    text-align: left;
+}
+
+.slick-dots li.slick-active button:before {
+    font-size: 18px;
+    color: #000000 !important;
+}
+
+.slick-dots li button:before {
+    font-size: 18px;
+    color: #ffffff;
+}
+/* ------------------------------------------------------- */
+/* ABOUT SECTION */
+section.about {
+    margin-top: -70px;
+    z-index: 1;
+    position: relative;
+}
+
+.about-box {
+    background-color: #ffffff;
+    border-bottom: 5px solid #ed1f79;
+}
+
+.about-text {
+    padding: 30px 80px 30px 40px;
+}
+
+/* ------------------------------------------------------- */
+/* PROGRAMS SECTION */
+section.programs {
+    margin-top: -80px;
+    padding: 100px 0 50px;
+    background-color: #eeeeee;
+}
+
+.program-container {
+    display: block;
+    margin: auto;
+    max-width: 1800px;
+}
+
+.program-container .box {
+    padding: 10px 0 20px;
+}
+
+.program-container h2 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.program-img {
+    position: relative;
+}
+
+.program-img span.title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 6px 10px;
+    vertical-align: text-top;
+    height: 60px;
+    background-color: #000000cc;
+    color: #ffffff;
+}
+
+.program-text {
+    background-color: #ffffff;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.program-text .content {
+    min-height: 180px;
+}
+
+.program-text a.btn {
+    margin: 5px auto;
+    width: 145px;
+}
+
+.program-text span.price {
+    padding: 7px 25px;
+    text-align: center;
+    margin: auto;
+    width: 145px;
+}
+
+a.btn.price {
+    color: #ed2078;
+    background-color: #ffffff;
+    border-color: #ed2078;
+}
+
+/* ------------------------------------------------------- */
+/* HOW IT WORKS SECTION */
+section.how-it-works {
+    padding: 60px 0 100px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.how-it-works .plans {
+    padding: 50px 0;
+}
+
+.how-it-works .plan-box {
+    text-align: left;
+    position: relative;
+    padding: 30px 0 40px;
+}
+
+span.icon {
+    color: #ffffff;
+    background: #ed2078;
+    padding: 15px 16px;
+    border-radius: 50%;
+    font-size: 45px;
+    height: 80px;
+    width: 80px;
+    display: block;
+    text-align: center;
+    position: absolute;
+    border: 8px solid #ffffffd1;
+    font-family: 'Playfair Display', serif;
+    line-height: 16px;
+    top: 0;
+}
+
+.plan-content {
+    margin-left: 42px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 40px;
+    min-height: 300px;
+}
+
+
+/* ------------------------------------------------------- */
+/* TESTIMONIAL SECTION */
+section.testimonials {
+    padding: 50px 0 70px;
+    text-align: center;
+    background-color: #eeeeee;
+}
+
+.testimonials .review-container {
+    padding: 50px 0;
+}
+
+.testimony-box {
+    position: relative;
+}
+
+.testimony-box img {
+    max-width: 200px;
+    min-height: 180px;
+    margin: auto;
+}
+
+.testimony-box .content {
+    background-color: #ffffff;
+    margin-top: -130px;
+    padding: 150px 45px 50px;
+    text-align: left;
+    border-bottom: 2px solid #ed1f79;
+}
+
+
+/* ------------------------------------------------------- */
+/* CONTACT SECTION */
+.contact-form {
+    padding: 20px;
+}
+
+.cform {
+    margin: auto;
+    width: 100%;
+}
+
+.fieldh {
+    width: 36.5%;
+    float: left;
+    margin: 20px 20px 20px 0;
+}
+
+.fieldh input {
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.field textarea {
+    width: 75%;
+    padding: 10px 20px;
+}
+
+input.wpcf7-form-control.wpcf7-submit {
+    border-radius: 35px;
+    font-weight: 700;
+    padding: 12px 35px;
+    margin: 10px 0;
+    border: none;
+    text-transform: uppercase;
+    background-color: #ed2078;
+    color: #ffffff;
+}
+
+.contact-info {
+    color: #ffffff;
+    padding: 20px 40px;
+}
+
+.contact-info img {
+    max-width: 200px;
+    padding: 30px 0;
+}
+
+.contact-info .info a {
+    display: block;
+}
+
+.info a:hover {
+    color: #000000;
+}
+
+.contact-info .sm a.media {
+    color: #ffffff;
+    font-size: 30px;
+    padding: 5px 0;
+    margin: 5px;
+}
+
+.sm a.media:hover {
+    color: #000000;
+}
+
+/* ------------------------------------------------------- */
+/* FOOTER SECTION */
+.bottom {
+    padding: 20px 0;
+}
+
+.bottom .navbar-nav {
+    float: left;
+}
+
+.bottom .navbar-nav>li>a {
+    padding: 5px 10px 15px;
+    color: #ffffff;
+}
+
+.bottom .nav>li>a:focus, .bottom .nav>li>a:hover {
+    background-color: unset;
+    border-bottom: unset;
+    color: #000000;
+}
+
+.designed {
+    text-align: right;
+}
+
+.designed span {
+    color: #ffffff;
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+.designed img {
+    max-width: 150px;
+    vertical-align: middle;
+}
+
+span.copyright {
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+
+/* ------------------------------------------------------- */
+/* PAGE HEADER */
+section.page-header {
+    color: #ffffff;
+    margin: 0;
+    padding: 10px 0 70px;
+}
+
+
+/* ------------------------------------------------------- */
+/* PAGES */
+section.page {
+    background-color: #f3f3f3;
+}
+
+.page-content .img {
+    float: right;
+    margin-top: 49px;
+}
+
+.page-text {
+    margin-top: -50px;
+    background-color: #ffffff;
+    margin-right: 200px;
+    padding: 50px 360px 50px 60px;
+}
+
+.page-text div {
+    text-align: justify;
+}
+
+.page-text .other-include ul li {
+    text-indent: 0;
+}
+
+.content-pages {
+    margin-top: -50px;
+    background-color: #ffffff;
+    padding: 50px;
+    margin-bottom: 20px;
+}
+
+.content-post {
+    padding: 50px;
+    text-align: justify;
+}
+
+.content-post a h2 {
+    color: #ed1f79;
+    text-align: left;
+}
+
+.error404 .content-pages {
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 100px 50px;
+}
+
+span.sign {
+    display: block;
+    width: 200px;
+    float: right;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+/* ------------------------------------------------------- */
+/* ONLINECOACHING PAGE */
+.program h2 {
+	text-align: left;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ed2078;
+    margin-bottom: 20px;
+    margin-top: 0;
+	
+}
+
+.page-content {
+    margin-bottom: 70px;
+}
+
+.page-content:last-child {
+    margin-bottom: 20px;
+}
+
+.page-content.right .img {
+    float: right;
+    max-width: 400px;
+    width: 100%;
+}
+
+.page-content.right .page-text {
+    padding: 50px 270px 50px 70px;
+}
+
+.register-btn {
+    padding: 10px 0;
+}
+
+.register-btn a.btn.price {
+    padding: 6px 40px 7px 20px;
+    margin-right: -40px;
+    font-family: 'Playfair Display', serif;
+}
+
+.program span {
+    font-style: italic;
+    color: #666666;
+    padding: 30px 0;
+    display: block;
+}
+
+.description {
+    color: #666666;
+}
+
+.page-content.left .img {
+    float: left;
+    max-width: 400px;
+    width: 100%;
+}
+
+.page-content.left .page-text {
+    margin-left: 200px !important;
+    padding: 50px 70px 50px 270px;
+    margin-right: 0;
+}
+
+.page-text div ul li {
+    text-indent: 45px;
+}
+
+.include {
+    text-align: left !important;
+}
+
+/* ------------------------------------------------------- */
+/* PROGRAM PAGE */
+.page-content.pc {
+    background-color: #ffffff;
+    margin-top: -50px;
+}
+
+.pc .img.banner {
+    float: none;
+    margin-top: 0;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.page-content.pc .page-text {
+    margin: 0;
+    padding: 0;
+}
+
+.page-content.pc .img {
+    float: left;
+    margin-top: 0;
+    padding: 0;
+}
+
+.program-description {
+    margin: 0;
+    padding: 50px 80px;
+    max-width: 845px;
+    width: 100%;
+    float: left;
+}
+
+.program-includes {
+    margin: 0;
+    padding: 50px 80px;
+    vertical-align: top;
+    width: 100%;
+    background-color: #67717e;
+    color: #ffffff;
+    float: right;
+}
+
+.program-includes .register-btn {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.page-content.pc .img .register-btn {
+    text-align: center;
+    padding: 80px 0 50px;
+}
+
+.pc-include {
+    /* padding: 12px 20px; */
+}
+
+.pc-title {
+    display: inline-block;
+    vertical-align: top;
+	padding-left: 40px;
+}
+
+.other-include {
+    padding: 20px;
+    font-size: 12px;
+}
+
+.other-include.list {
+    text-align: left !important;
+    font-size: inherit;
+}
+
+.other-include.list ul li {
+    text-indent: 0;
+}
+
+/* ------------------------------------------------------- */
+/* ADD TO CART BUTTON */
+
+span.price {
+    display: inline-block;
+    padding: 6px 40px 7px 20px;
+    margin-right: -35px;
+    font-family: 'Playfair Display', serif;
+    color: #ed2078;
+    background-color: #ffffff;
+    border: 1px solid #ed2078;
+    font-size: 18px;
+    border-radius: 50px;
+}
+
+span.price:hover {
+    color: #333;
+    background-color: #d4d4d4;
+    border-color: #8c8c8c;
+}
+
+form.wpus-cart-button-form {
+    display: inline-block;
+}
+
+input.vsubmit.submit, input#paypalbutton {
+    background-color: #ed1f79;
+    border-color: #bc135d;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 35px;
+    font-weight: 700;
+    padding: 10px 25px 7px;
+    margin: 4px 0 10px;
+	border: unset;
+}
+
+input.vsubmit.submit:hover {
+    background-color: #000000;
+}
+
+
+/* ------------------------------------------------------- */
+/* CHECKOUT PAGE */
+.page-id-145 h2, .page-id-93 h2 {
+    display: none;
+}
+
+
+#shopping_cart {
+    padding: 20px 30px;
+}
+
+.shopping_cart input {
+    text-align: center;
+}
+
+.cart_labels th {
+    color: #ffffff;
+}
+
+.shopping_cart th {
+    background-color: #ed2078;
+    padding: 0 10px;
+}
+
+.shopping_cart th, .shopping_cart td {
+    padding: 0 10px;
+}
+
+.shopping_cart tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr.cart_labels th {
+    color: #ffffff;
+	font-size: 14px;
+}
+
+tr#cartcontent td, tr#totalrow td {
+    padding: 20px 10px;
+}
+
+tr#ppcheckout {
+    background-color: #ffffff;
+}
+
+td.center input {
+    border: unset;
+    background-color: unset;
+}
+
+.cartLink a {
+    color: #394451;
+	font-size: 13px;
+}
+
+input#paypalbutton:hover {
+    background-color: #000000;
+}
+
+input#paypalbutton {
+    margin-top: 30px;
+}
+
+tr#totalrow {
+    font-size: 16px;
+	background-color: #cacaca;
+}
+
+tr#item_in_cart th {
+    background-color: #ffffff;
+    padding: 0 0 30px;
+    font-weight: 700;
+    color: #394451;
+    font-size: 15px;
+}
+
+.continue {
+    display: inline-block;
+    position: absolute;
+    bottom: 75px;
+    left: 212px;
+}
+
+.continue a.btn {
+    background-color: #cacaca;
+    color: #ed2078;
+    font-size: 14px;
+}
+
+tr#vatrow {
+    color: #9e9b9b;
+}
+
+/* ------------------------------------------------------- */
+/* LOGIN PAGE */
+.page-id-183 .page-header {
+    display: none;
+}
+
+.page-id-183 .content-pages {
+    margin: 20px 0;
+	padding: 50px 20px;
+}
+
+.page-id-183 .content-pages h2 {
+    text-align: center;
+}
+
+.tml input {
+    padding: 10px;
+    border: 1px solid #cacaca;
+}
+
+.tml input#wp-submit {
+    background-color: #ed1f79;
+    border-color: #bc135d;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 25px;
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+    color: #ffffff;
+}
+
+.tml input#wp-submit:hover {
+    background-color: #000000;
+    border-color: #ffffff;
+}
+
+#theme-my-login {
+    margin: auto;
+}
+
+#loginform p {
+    margin: 0 0 0.5em 0;
+}
+
+/* ------------------------------------------------------- */
+/* VIDEO PAGE */
+.content-pages .content .heading {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ed21778a;
+    margin-bottom: 20px;
+}
+
+.vid-play {
+    padding: 20px 0;
+    border-bottom: 1px solid #ed21778a;
+    margin-bottom: 20px;
+}
+
+.fp-playlist-horizontal.is-wide a, .entry-content .fp-playlist-horizontal.is-wide a {
+    width: 30% !important;
+}
+
+.featured-vid h4.title {
+    margin-bottom: 0;
+}
+
+.featured-vid a {
+    text-decoration: none;
+}
+
+.featured-vid a h4.title {
+    color: #353535;
+}
+
+.featured-vid a h4.title:hover {
+    color: #ed2078;
+}
+
+.content .heading span.date, .featured-vid span.date {
+    display: block;
+    color: #949292;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #ed2177;
+}
+
+.slick-prev, .slick-next {
+    top: 60%;
+    width: 35px;
+    height: 35px;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 35px;
+}

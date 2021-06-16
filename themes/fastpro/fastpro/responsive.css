@@ -1,0 +1,368 @@
+@charset "utf-8";
+/* CI Document */
+
+
+@media screen and (max-width:1250px) {
+	.top .user a.btn {
+		margin: 15px 0 15px 40px;
+	}
+	.gt-box img {
+		width: 55%;
+	}
+	.gt-text {
+		width: 45%;
+	}
+}
+
+@media screen and (max-width:1200px) {
+	.wrap.f-c {
+		padding: 10px 0;
+		display: block;
+	}
+	.footer-widgets .nav, .footer-widgets a.logo {
+		text-align: center;
+		width: 100%;
+	}
+	.slide-form img {
+		display: none;
+	}
+	.item {
+		width: 500px;
+		float: none;
+		height: auto !important;
+	}
+	.column-info h2 {
+		height: auto !important;
+	}
+	section.faq .content-box {
+		margin: 25px 0;
+	}
+}
+
+
+@media screen and (max-width:1165px) {
+	section.objectives .text {
+		width: 420px;
+	}
+	.gt-box img {
+		width: 100%;
+		float: none;
+	}
+	.gt-text {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:1151px) {
+	.slide-form {
+		width: 46%;
+	}
+	section.objectives {
+		background-color: #00a7f6 !important;
+	}
+	.core {
+		padding: 10px 15px 30px;
+	}
+	.desktop-content {
+		font-size: 18px;
+		line-height: 28px;
+	}
+}
+
+@media screen and (max-width:1141px) {
+	section.objectives {
+		padding: 80px 0 10px;
+	}
+	.core {
+		margin-top: 140px;
+		background-color: unset;
+	}
+	.fields .cform {
+		max-width: 500px;
+	}
+}
+
+@media screen and (max-width:1112px) {
+	.core {
+		font-size: 25px;
+	}
+	.top .user {
+		padding-top: 15px;
+	}
+}
+
+@media screen and (max-width:1024px) {
+	.top .user a.btn {
+		margin: 15px 0 15px 40px;
+	}
+	
+}
+
+@media screen and (max-width:988px) {
+	.top a.logo {
+		float: none;
+		width: 100%;
+	}
+	.top .nav {
+		display: none;
+	}
+	.top a.logo, .top .user {
+		width: 100%;
+		text-align: center;
+		margin: auto;
+		padding: 0;
+	}
+	.top a.logo img, .footer-widgets a.logo img{
+		text-align: center;
+		margin: auto;
+		display: block;
+	}
+	section.page-header.about .header-content {
+		padding: 30px;
+		font-size: 16px;
+		line-height: 20px;
+	}
+	img.aligncenter {
+		max-width: unset;
+	}
+	.fields .cform {
+		max-width: 400px;
+	}
+}
+
+@media screen and (max-width:900px) {
+
+}
+
+@media screen and (max-width:870px) {
+	.cform {
+		max-width: 290px;
+	}
+}
+
+@media screen and (max-width:840px) {
+	div.wpcf7-mail-sent-ok,
+	div.wpcf7-validation-errors {
+		width: 100%;
+	}
+	.fields {
+		float: none;
+		padding: 0;
+		width: 100%;
+	}
+	.address {
+		float: none;
+		display: block;
+		width: 100%;
+		margin: auto;
+		text-align: center;
+		padding-top: 30px;
+	}
+	.info {
+		padding: 10px 0;
+	}
+}
+
+@media screen and (max-width:780px) {
+	.slide-content {
+		width: 100%;
+    	padding: 0 0 20px;
+	}
+	.slide-form {
+		display: none;
+	}
+	.slide-form-mobile {
+		display: block;
+	}
+}
+
+@media screen and (max-width:768px) {
+	.footer-column {
+		width: 100%;
+		display: block;
+		margin: auto;
+		text-align: center;
+		padding: 5px 0;
+	}
+	.footer-column.right {
+		text-align: center;
+		width: 100%;
+	}
+	section.faq .column-info h2 {
+		padding-left: 60px;
+	}
+	section.faq .content-box {
+		padding: 30px;
+	}
+	section.faq .column-info {
+		padding-left: 0;
+	}
+	.main-content.service {
+		padding: 30px;
+	}
+	.cs-box {
+		margin: 30px auto;
+		width: 100%;
+	}
+	.cs-content, .cs-box .cs-title {
+		min-height: 0;
+	}
+	.main-content.request .content {
+		padding: 10px 0 20px;
+	}
+	section.sub.process .content-box {
+		padding: 20px;
+		margin: auto;
+	}
+	.vision, .mission {
+		margin: 15px 0;
+		float: none;
+	}
+	section.objectives .text {
+		width: 100%;
+	}
+	.mv .vision::before, .mv .mission::after {
+		display: none;
+	}
+	.content-box.error-page {
+		padding: 50px 50px 80px;
+		margin: 0;
+	}
+	.content-box.error-page h1.header, .content-box.error-page .text {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width:588px) {
+	.page-id-179 h2.page-content {
+		text-align: center;
+	}
+	.page-id-179 .content-box {
+		padding: 20px 20px 50px 10px;
+	}
+	.cfield {
+		width: 100%;
+		float: none;
+	}
+	.ffield textarea.wpcf7-form-control.wpcf7-textarea.wpcf7-validates-as-required {
+		width: 100%;
+		margin: 10px auto 20px;
+		max-width: 94%;
+	}
+}
+
+@media screen and (max-width:568px) {
+	.column {
+    	width: 80%;
+	}
+	.item {
+		max-width: 300px;
+		height: 275px;
+		width: 100%;
+		padding: 0;
+	}
+	.column-info {
+		padding-left: 65px;
+	}
+	.item:last-child {
+		margin-bottom: 50px;
+	}
+	section.faq .content-box {
+		padding: 15px;
+	}
+	section.faq .column-info {
+		padding-left: 0;
+	}
+	.page-id-106 section.page-header {
+		padding: 44px 0 0;
+	}
+	.vision, .mission {
+		padding: 5px 20px 20px;
+	}
+	.page-id-55 .content-box {
+		padding: 20px 25px;
+		margin: 0;
+	}
+	.fields .cform {
+		max-width: 100%;
+		padding: 20px 0;
+		border: none;
+	}
+	.form span.wpcf7-form-control-wrap input, textarea.wpcf7-form-control.wpcf7-textarea{
+		max-width: 80%;
+	}
+}
+
+@media screen and (max-width:500px) {
+	
+}
+
+@media screen and (max-width:461px) {
+	.top a.logo img, .footer-widgets a.logo img {
+		width: 80%;
+	}
+	span.phone, span.email {
+		padding: 0 10px;
+	}
+	.top .user a.btn {
+		margin: 15px 0;
+	}
+	.slide-content h1 {
+		font-size: 32px;
+    	line-height: 40px;
+	}
+	.slide-form-mobile a.btn {
+		display: table;
+		margin: auto;
+	}
+	.cs-box .cs-title {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width:425px) {
+	.main-content.request .content {
+		padding-bottom: 155px;
+	}
+	.core {
+		padding: 10px 15px;
+		margin-top: 100px;
+	}
+	.content-box.error-page {
+		padding: 30px 25px 50px;
+	}
+}
+
+@media screen and (max-width:388px) {
+	.footer-column.right span {
+		padding: 5px;
+		display: block;
+	}
+	section.faq span.icon {
+		padding: 16px 16px;
+		font-size: 20px;
+		height: 15px;
+		width: 15px;
+	}
+	section.services {
+		padding: 20px 0 40px;
+	}
+	.page-id-106 section.page-header {
+		padding: 16px 0 0;
+	}
+}
+
+@media screen and (max-width:340px) {
+	.main-content.request .content {
+		padding-bottom: 100px;
+	}
+	section.objectives {
+		padding-top: 60px;
+	}
+	.gt-text .content {
+		padding: 0 10px;
+	}
+}
+
+
+

@@ -1,0 +1,462 @@
+/* 
+	Theme Name: Floatisimo
+	Author: Creative Impression
+	Author URI: www.creativeimpression.com
+	Description: Custom theme for Floatisimo
+*/
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+/*	font-size: 100%;
+*/	font: inherit;
+	vertical-align: baseline;
+	outline: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size:14px;
+	text-decoration: none;
+	line-height: 20px;
+	
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clear { 
+	clear:both;
+}
+
+.wrap {
+    width: 100%;
+    max-width: 1130px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+
+
+
+/* ------------------------------------------------------- */
+/* HEADER */
+header.head {
+    border-top: #e4498b 2px solid;
+	padding: 0 20px;
+}
+
+header a.logo {
+    width: 30%;
+    margin: 30px 0;
+}
+
+header ul.menu {
+    float: right;
+    width: 70%;
+    padding: 50px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+	display: block;
+	text-align: right;
+}
+
+header ul.menu li {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+header ul.menu li a {
+    text-decoration: none;
+    color: #0066cc;
+    letter-spacing: 0;
+}
+
+header ul.menu li a:hover {
+    color: #e7468b;
+}
+
+/* ------------------------------------------------------- */
+/* BANNER */
+section.banner {
+    background: url(../img/floatisimo-bg-banner.png) center -55px no-repeat transparent;
+    background-repeat: no-repeat;
+    padding: 20px 0 130px;
+    z-index: 99;
+    position: relative;
+}
+
+.slide {
+    background: url(../img/floatisimo-banner.png) top center no-repeat transparent;
+    height: 564px;
+    background-size: contain;
+}
+
+.banner-content {
+    float: right;
+    display: block;
+    width: 64%;
+    padding: 50px 20px;
+}
+
+.banner-content span {
+    text-align: center;
+    display: block;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #0066cc;
+    padding: 20px 0 10px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.banner-content h1.header {
+    display: block;
+    font-size: 70px;
+    line-height: 75px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+	color: #4f2e1b;
+}
+
+.banner-content p {
+    padding: 18px 70px;
+    text-align: center;
+}
+
+sup {
+    position: absolute;
+    font-size: 40px;
+    margin-top: -12px;
+}
+
+.banner-content a.btn {
+    text-align: center;
+    margin: 0 auto;
+    display: table;
+	padding: 10px 25px;
+}
+
+a.btn {
+    background: #ff0066;
+    padding: 12px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+a.btn:hover {
+    opacity: .9;
+}
+/* ------------------------------------------------------- */
+/* ABOUT SECTION */
+section.about {
+    background: url(../img/floatisimo-about-bg.jpg) center center no-repeat;
+    background-size: cover;
+    margin: -150px 0 0;
+    padding: 150px 0 0;
+}
+
+h2.heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    color: #0066cc;
+    padding: 20px 0 60px;
+}
+
+section.about img {
+    width: 35%;
+    margin: 0 5% 0 8%;
+    float: left;
+}
+
+section.about p.a-content {
+    margin-right: 8%;
+    line-height: 20px;
+    padding-bottom: 50px;
+}
+
+section.about a.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 13px;
+    letter-spacing: 0;
+}
+/* ------------------------------------------------------- */
+/* CARDS SECTION */
+section.cards {
+    background: url(../img/floatisimo-cards-bg.jpg) center center no-repeat transparent;
+    background-size: cover;
+    margin: -54px 0 0;
+    padding: 60px 0 0;
+}
+
+section.cards h2.heading {
+    color: #ffffff;
+    margin: 50px 0 0;
+    padding: 0;
+}
+
+section.cards h2.heading span {
+    font-family: 'Signika', sans-serif;
+}
+
+.left.gift {
+    width: 40%;
+    float: left;
+    margin: 0 5% 5%;
+	color: #ffffff;
+    text-align: center;
+}
+
+.right.loyalty {
+    width: 40%;
+    float: right;
+    margin: 0 5%;
+    color: #ffffff;
+    text-align: center;
+}
+
+p.c-content {
+    padding: 10% 10% 5%;
+    height: 75px;
+}
+
+p.c-content span {
+    font-weight: 600;
+}
+
+.left.gift img, .right.loyalty img {
+    width: 100%;
+}
+
+.left.gift a.btn, .right.loyalty a.btn {
+    background: #0066cc;
+    padding: 10px 20px;
+    font-size: 13px;
+    letter-spacing: 0;
+    display: inline-block;
+}
+
+/* ------------------------------------------------------- */
+/* SOCIAL SECTION */
+section.social {
+    padding: 50px 20px 130px;
+    background: url(../img/floatisimo-follow.jpg) center center no-repeat transparent;
+    background-size: cover;
+}
+
+h3.heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    color: #0066cc;
+    padding: 20px 0;
+}
+
+.left.fb {
+    float: left;
+    width: 48.5%;
+    margin: 8px;
+}
+
+.left.tw {
+    float: right;
+    width: 48.5%;
+    margin: 8px;
+    display: inline-block;
+}
+
+.left.fb img, .left.tw img {
+    width: 100%;
+}
+
+span.instagram {
+    text-align: center;
+    display: block;
+    padding: 20px;
+    color: #0066cc;
+    font-size: 21px;
+}
+
+span.instagram i.fa.fa-instagram {
+    font-weight: 600;
+    font-size: 30px;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+section.social .ig {
+    text-align: center;
+}
+
+section.social .ig img {
+    width: 16.4%;
+}
+
+
+/* ------------------------------------------------------- */
+/* LOCATION SECTION */
+section.location {
+    background: url(../img/floatisimo-location.jpg) center center no-repeat transparent;
+    background-size: cover;
+	padding: 50px 0;
+}
+
+section.location .wrapper {
+    width: 100%;
+    background: #ffffff;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 40px auto;
+}
+
+section.location h3.heading {
+    color: #ffffff;
+}
+
+section.location .address {
+    width: 34%;
+    float: left;
+    padding: 40px 20px 20px 40px;
+    background: #ffffff;
+}
+
+.address h4 {
+    color: #2a78d1;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 20px 0 40px;
+    font-size: 20px;
+}
+
+.address .a-icon {
+    float: left;
+    padding: 10px 0 10px 0;
+}
+
+.address .add-info {
+    float: left;
+    padding: 10px 20px 15px;
+    font-size: 13px;
+	line-height: 22px;
+}
+
+.add-info span {
+    font-weight: 600;
+}
+
+.address .add-info a {
+    text-decoration: none;
+    color: #ff0066;
+}
+
+section.location .map {
+    width: 60%;
+    float: right;
+}
+
+section.location .map img {
+    width: 100%;
+}
+
+/* ------------------------------------------------------- */
+/* FOOTER SECTION */
+footer.foot {
+    background: #e4498b;
+    padding: 20px;
+}
+
+.footer.left {
+    width: 40%;
+    float: left;
+}
+
+.footer.left ul.menu li {
+    display: inline-block;
+	padding: 20px 20px 20px 0;
+	
+}
+
+.footer.left ul.menu li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 13px;
+}
+
+.social-icon {
+    width: 20%;
+    float: left;
+    text-align: center;
+	padding: 20px 0;
+}
+
+.social-icon a {
+    color: #ffffff;
+    font-size: 25px;
+    padding: 2px;
+}
+
+.social-icon i:hover, .footer.left ul.menu li a:hover {
+    color: #8c1749;
+}
+
+.footer.right {
+    width: 40%;
+    float: right;
+    text-align: right;
+    padding: 20px 0;
+}
+
+.footer.right span {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 200;
+    padding-right: 10px;
+}
+
+.footer.right img {
+    vertical-align: middle;
+}

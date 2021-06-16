@@ -1,0 +1,1548 @@
+/* 
+	Theme Name: Floatisimo
+	Author: Creative Impression
+	Author URI: www.creativeimpression.com
+	Description: Custom theme for Floatisimo
+*/
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	outline: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size:14px;
+	text-decoration: none;
+	line-height: 20px;
+	
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clear { 
+	clear:both;
+}
+
+.wrap {
+    width: 100%;
+    max-width: 1130px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+
+p {
+    margin: 10px 0 20px;
+    line-height: 22px;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+strong {
+    font-weight: 700;
+}
+
+/* ------------------------------------------------------- */
+/* HEADER */
+header.head {
+    border-top: #e4498b 2px solid;
+	padding: 0 20px;
+}
+
+header a.logo {
+    width: 30%;
+    margin: 30px 0;
+}
+
+header ul.menu {
+    float: right;
+    width: 70%;
+    padding: 50px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+	display: block;
+	text-align: right;
+}
+
+header ul.menu li {
+    display: inline-block;
+    padding-left: 20px;
+	position:relative;
+}
+
+header ul.menu li a {
+    text-decoration: none;
+    color: #0066cc;
+    letter-spacing: 0;
+	font-weight:bold;
+}
+
+header ul.menu li a:hover {
+    color: #e7468b;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 0;
+    z-index: 100;
+    left: 8px;
+    text-align: left;
+}
+
+header ul.menu li .sub-menu li {
+    padding: 0;
+    display: block;
+}
+
+.sub-menu li a {
+    padding: 12px;
+    display: block;
+	width: 200px;
+}
+
+header ul.menu li:hover .sub-menu {
+    display: block;
+}
+
+button#responsive-menu-button {
+    background: #67e2fa !important;
+}
+
+/* ------------------------------------------------------- */
+/* BANNER */
+section.banner {
+    background: url(img/floatisimo-bg-banner.png) center -75px no-repeat transparent;
+    background-repeat: no-repeat;
+    padding: 0 0 130px;
+    z-index: 99;
+    position: relative;
+	background-size: cover;
+}
+
+.slide {
+    height: 665px;
+    background-size: cover !important;
+}
+
+.banner-content {
+    float: right;
+    display: block;
+    width: 64%;
+    padding: 50px 20px;
+}
+
+.banner-content span {
+    text-align: center;
+    display: block;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #0066cc;
+    padding: 20px 0 10px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.banner-content h1.header {
+    display: block;
+    font-size: 70px;
+    line-height: 75px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+	color: #4f2e1b;
+    margin: 10px 0;
+}
+
+.banner-content h1.header p {
+    line-height: 60px;
+}
+
+.banner-content p {
+    padding: 18px 70px;
+    text-align: center;
+}
+
+sup {
+    position: absolute;
+    font-size: 40px;
+    margin-top: -12px;
+}
+
+.banner-content a.btn {
+    text-align: center;
+    margin: 0 auto;
+    display: table;
+	padding: 10px 25px;
+}
+
+a.btn {
+    background: #ff0066;
+    padding: 12px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+a.btn:hover {
+    opacity: .9;
+}
+
+.banner-content a.btn:hover {
+    background: #0066cc;
+}
+
+
+/* ------------------------------------------------------- */
+/* ABOUT SECTION */
+section.about {
+    background: url(img/floatisimo-about-bg.jpg) center center no-repeat;
+    background-size: cover;
+	margin: -280px 0 0;
+    padding: 185px 0 25px;
+}
+
+section.about h2.heading {
+    padding: 40px 0 20px;
+}
+
+h2.heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    color: #0066cc;
+    padding: 60px 0;
+}
+
+section.about img {
+    width: 35%;
+    margin: 0 5% 0 8%;
+    float: left;
+}
+
+section.about p.a-content {
+    margin-right: 8%;
+    line-height: 20px;
+}
+
+section.about a.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 13px;
+    letter-spacing: 0;
+}
+
+section.about a.btn:hover {
+    background: #0066cc;
+}
+
+/* ------------------------------------------------------- */
+/* CARDS SECTION */
+section.cards {
+    background: url(img/floatisimo-cards-bg.jpg) center center no-repeat transparent;
+    background-size: cover;
+    margin: -54px 0 0;
+    padding: 60px 0 0;
+}
+
+section.cards h2.heading {
+    color: #ffffff;
+    margin: 50px 0 0;
+    padding: 0;
+}
+
+section.cards h2.heading span {
+    font-family: 'Signika', sans-serif;
+}
+
+.left.gift {
+    width: 40%;
+    float: left;
+    margin: 0 5% 5%;
+	color: #ffffff;
+    text-align: center;
+}
+
+.right.loyalty {
+    width: 40%;
+    float: right;
+    margin: 0 5%;
+    color: #ffffff;
+    text-align: center;
+}
+
+p.c-content {
+    padding: 10% 10% 5%;
+    height: 75px;
+	margin: 0;
+}
+
+p.c-content span {
+    font-weight: 600;
+}
+
+.left.gift img, .right.loyalty img {
+    width: 100%;
+}
+
+.left.gift a.btn, .right.loyalty a.btn {
+    background: #0066cc;
+    padding: 10px 20px;
+    font-size: 13px;
+    letter-spacing: 0;
+    display: inline-block;
+}
+
+.left.gift a.btn:hover {
+    background: #064c92;
+}
+
+.right.loyalty a.btn:hover {
+    background: #064c92;
+}
+
+/* ------------------------------------------------------- */
+/* SOCIAL SECTION */
+section.social {
+    padding: 50px 20px 130px;
+    background: url(img/floatisimo-follow.jpg) center bottom no-repeat transparent;
+    background-size: contain;
+}
+
+h3.heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    color: #0066cc;
+    padding: 20px 0;
+}
+
+.left.fb {
+    float: left;
+    width: 48.5%;
+    margin: 8px;
+}
+
+.left.tw {
+    float: right;
+    width: 48.5%;
+    margin: 8px;
+    display: inline-block;
+}
+
+.avatar img {
+    margin-right: 20px;
+    clear: both;
+}
+
+span.instagram {
+    text-align: center;
+    display: block;
+    padding: 20px;
+    color: #0066cc;
+    font-size: 21px;
+}
+
+span.instagram i.fa.fa-instagram {
+    font-weight: 600;
+    font-size: 30px;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+section.social .ig {
+    text-align: center;
+}
+
+section.social .ig img {
+    width: 16.4%;
+}
+
+.sfp-container span, .sfp-container span iframe {
+    width: 228px !important;
+}
+#sb_instagram .sb_instagram_header {
+    overflow: hidden;
+}
+
+/* ------------------------------------------------------- */
+/* LOCATION SECTION */
+section.location {
+    background: url(img/floatisimo-location.jpg) center center no-repeat transparent;
+    background-size: cover;
+	padding: 50px 0;
+}
+
+section.location .wrapper {
+    width: 100%;
+    background: #ffffff;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 40px auto;
+}
+
+section.location h3.heading {
+    color: #ffffff;
+}
+
+section.location .address {
+    width: 34%;
+    float: left;
+    padding: 40px 20px 20px 40px;
+    background: #ffffff;
+}
+
+.address h4 {
+    color: #2a78d1;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.address .a-icon {
+    float: left;
+    padding: 10px 0 10px 0;
+}
+
+.address .add-info {
+    float: left;
+    padding: 10px 20px 15px;
+    font-size: 13px;
+	line-height: 22px;
+}
+
+.add-info span {
+    font-weight: 600;
+}
+
+.address .add-info a {
+    text-decoration: none;
+    color: #ff0066;
+}
+
+section.location .map {
+    width: 60%;
+    float: right;
+}
+
+section.location .map span iframe {
+    width: 100% !important;
+}
+
+.map span p {
+    margin: 0;
+}
+
+section.location .map img {
+    width: 100%;
+}
+
+/* ------------------------------------------------------- */
+/* FOOTER SECTION */
+footer.foot {
+    background: #e4498b;
+    padding: 20px;
+}
+
+.footer.left {
+    width: 40%;
+    float: left;
+}
+
+.footer.left ul.menu li {
+    display: inline-block;
+	padding: 20px 5px 20px 0;
+	
+}
+
+.footer.left ul.menu li a {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 11px;
+}
+
+.social-icon {
+    width: 20%;
+    float: left;
+    text-align: center;
+	padding: 20px 0;
+}
+
+.social-icon a {
+    color: #ffffff;
+    font-size: 25px;
+    padding: 2px;
+}
+
+.social-icon i:hover, .footer.left ul.menu li a:hover {
+    color: #8c1749;
+}
+
+.footer.right {
+    width: 40%;
+    float: right;
+    text-align: right;
+    padding: 20px 0;
+}
+
+.footer.right span {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 200;
+    padding-right: 10px;
+}
+
+.footer.right img {
+    vertical-align: middle;
+}
+
+/* ------------------------------------------------------- */
+/* OUR STORY PAGE */
+section.page-header {
+    background: url(img/header-bg.png) center center no-repeat;
+    padding: 30px 20px;
+    color: #ffffff;
+    background-size: cover;
+}
+
+.page-header h2.heading {
+    color: #ffffff;
+    text-align: left;
+    padding: 10px 0;
+    margin: 20px 0;
+}
+
+.page-header span.h-next {
+    padding: 10px 0;
+}
+
+.page-header span.h-next a {
+    text-decoration: none;
+}
+
+.page-header span.h-next a span {
+    color: #ffffff;
+}
+
+.h-next span {
+    color: #e54a8b;
+}
+
+section.page-content {
+    padding: 20px 0 40px;
+}
+
+.page-content h3.heading {
+	padding: 20px 0;
+}
+
+.page-content h3.header-text {
+    padding: 0 50px 20px;
+    text-align: center;
+}
+
+.page-content h3.header-text span {
+    color: #ff0066;
+}
+
+ul.menu-tabs {
+    padding: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    text-align: center;
+}
+
+ul.menu-tabs li {
+    display: inline-block;
+    padding: 0;
+    background: #ff0066;
+}
+
+ul.menu-tabs li:first-child {
+    border-radius: 20px 0 0 20px;
+}
+
+ul.menu-tabs li:last-child {
+    border-radius: 0 20px 20px 0;
+}
+
+ul.menu-tabs li.active {
+    background: #0066cc;
+}
+
+ul.menu-tabs li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 8px 20px;
+    display: block;
+}
+
+/* ------------------------------------------------------- */
+/* OUR COMPANY PAGE */
+.text-l {
+    width: 50%;
+    padding: 0 20px 0 0;
+    display: inline-block;
+}
+
+img.image-r {
+    width: 45%;
+    float: right;
+}
+
+img.image-l {
+    width: 30%;
+    display: inline-block;
+}
+
+section.page-content.mission {
+    padding-bottom: 0;
+}
+
+.wrap.m {
+    max-width: 1230px;
+	height: 482px;
+}
+
+.wrap.m h3.heading {
+    padding: 0;
+}
+
+img.image-l {
+    width: 40%;
+    display: inline-block;
+}
+
+.text-r {
+    width: 60%;
+    float: right;
+    margin-top: 50px;
+}
+
+.text-r p {
+    font-size: 22px;
+    line-height: 30px;
+    color: #ff0066;
+    padding-right: 100px;
+}
+
+.text-r img.alignleft {
+    float: left;
+    padding-right: 25px;
+	padding-bottom:30px;
+}
+
+/* ------------------------------------------------------- */
+/* OUR CREATION PAGE */
+section.page-content.treats {
+    background: url(img/our-creations-bg1.jpg) center center no-repeat transparent;
+    background-size: cover;
+    color: #ffffff;
+}
+
+.page-content .wrap .ci {
+    float: left;
+    width: 45%;
+    position: relative;
+    margin-right: 40px;
+	margin-top: 20px;
+}
+
+h4.title {
+    font-size: 20px;
+    color: #0066cc;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.page-content.treats h3.heading {
+    color: #ffffff;
+}
+
+.treats .text-t {
+    text-align: center;
+    margin: 0 40px 40px;
+    line-height: 30px;
+}
+
+.treats .text-t span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.treats img {
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+section.page-content.treats {
+    padding: 40px 0 600px;
+}
+
+/* ------------------------------------------------------- */
+/* SNEAKPEEK PAGE */
+
+.box-left img.sweets {
+    float: left;
+    width: 40%;
+    margin: 100px 30px 100px 100px;
+}
+
+.box-left .content-wrapping {
+    display: inline-block;
+    width: 40%;
+    margin: 200px 0 200px 0;
+}
+
+.box-right .content-wrapping {
+    float: left;
+    width: 40%;
+    margin: 200px 0 200px 100px;
+}
+
+.box-right img.sweets {
+    display: inline-block;
+    width: 40%;
+	margin: 70px 0 40px;
+}
+
+.content-wrapping p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.content-wrapping h4.title {
+    font-size: 30px;
+    line-height: 35px;
+	font-weight: 700;
+}
+
+span.ft {
+    color: #900a59;
+}
+
+span.cb {
+    color: #663715;
+}
+
+span.pc {
+    color: #339900;
+}
+
+span.bs {
+    color: #680099;
+}
+
+span.us {
+    color: #159fb3;
+}
+
+span.ts {
+    color: #cc3333;
+}
+
+/* ------------------------------------------------------- */
+/* CONTACT US PAGE */
+section.contact-form {
+    padding: 50px 20px 130px;
+    background: url(img/floatisimo-follow.jpg) center center no-repeat transparent;
+    background-size: cover;
+}
+
+section.contact-form form.wpcf7-form p {
+    margin: 0;
+}
+
+.cform {
+    width: 33%;
+    display: inline-block;
+}
+
+textarea.wpcf7-form-control.wpcf7-textarea {
+    width: 96%;
+    background: #f8f8f8;
+    border-color: #dcdcdc;
+    padding: 2%;
+    margin: 10px 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+input[type="email" i], input[type="number" i], input[type="tel" i], input[type="url" i], input[type="text" i] {
+    padding: 10px 15px;
+    margin: 10px 0;
+    width: 90%;
+	background: #f8f8f8;
+    border: #dcdcdc 1px solid;
+	font-family: 'Montserrat', sans-serif;
+}
+
+input.wpcf7-form-control.wpcf7-submit {
+    padding: 15px 45px;
+    background: #ff0066;
+    border: 0;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+    color: #ffffff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input.wpcf7-form-control.wpcf7-submit:hover {
+    background: #0066cc;
+}
+
+.wpcf7-form-control-wrap {
+    position: relative;
+    width: 100%;
+    display: block;
+}
+
+label {
+    width: 100%;
+    display: block;
+}
+
+/* ------------------------------------------------------- */
+/* LOYALTY AND GIFT CARDS PAGE */
+p.lg-content {
+    line-height: 32px;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+}
+
+section.lg-cards {
+	background: url(img/lg-cards-bg.jpg) center center no-repeat transparent;
+    background-size: cover;
+	padding: 20px 20px 40px;
+}
+
+.g-card {
+    background: url(img/gift-cards-bg.jpg) center center no-repeat transparent;
+    padding: 20px;
+    margin: 20px 0;
+	border-radius: 10px;
+}
+
+.g-card img {
+    float: left;
+    padding: 20px 20px 0;
+    width: 42%;
+}
+
+.g-content {
+    float: right;
+    width: 47%;
+    padding: 50px 20px 50px 50px;
+    color: #ffffff;
+}
+
+.l-content {
+    float: left;
+    width: 48%;
+    padding: 40px 20px 30px 40px;
+    color: #ffffff;
+}
+
+.l-content h4, .g-content h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+	margin-top: 20px;
+}
+
+.l-card {
+    background: url(img/loyalty-cards-bg.jpg) center center no-repeat transparent;
+	padding: 20px;
+	margin: 20px 0;
+    border-radius: 10px;
+}
+
+.l-card img {
+    float: right;
+    padding: 20px 20px 0;
+    width: 40%;
+}
+
+.l-content h5, .g-content h5 {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 0 20px;
+    text-transform: uppercase;
+}
+
+.l-content p, .g-content p {
+    padding-right: 85px;
+}
+
+/* ------------------------------------------------------- */
+/* PRODUCT DETAIL PAGE */
+ul.menu-pd-tabs {
+    padding: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    text-align: center;
+	border-bottom: #ff0066 1px solid;
+	margin-bottom: 30px;
+}
+
+ul.menu-pd-tabs li {
+    display: inline-block;
+    padding: 8px 20px;
+    background: #ff0066;
+    border-radius: 20px;
+    width: 110px;
+	margin: 10px;
+}
+
+ul.menu-pd-tabs li.active {
+    background: #0066cc;
+}
+
+ul.menu-pd-tabs li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.pd img {
+    float: left;
+    display: inline-block;
+    padding: 50px 30px 0 50px;
+    width: 28%;
+}
+
+.details {
+    float: right;
+    padding: 10px 30px 10px 0;
+    width: 54%;
+}
+
+.details h3.heading {
+    text-align: left;
+	margin: 20px auto;
+}
+
+.sizes {
+    display: block;
+    clear: both;
+    margin: 50px 0;
+}
+
+.sizes span {
+    padding: 10px 15px;
+    border: #ff0066 1px solid;
+    border-left: 0;
+    font-weight: 600;
+    color: #ff0066;
+    text-transform: uppercase;
+}
+
+.sizes span:first-child {
+    border-left: 1px solid #ff0066;
+    border-radius: 20px 0 0 20px;
+}
+
+.sizes span:last-child {
+    border-radius: 0 20px 20px 0;
+}
+
+.facts {
+    float: left;
+    padding: 0 15px;
+    border-right: #ff0066 1px solid;
+	margin: 20px 0;
+}
+
+.price span {
+    font-size: 36px;
+    padding: 20px 0 20px 10px;
+    display: block;
+    font-weight: 600;
+    color: #ff0066;
+}
+
+.product-slider .slick-prev::before, .product-slider .slick-next::before {             color: #ff0066 !important;
+}
+
+.product-slider .slick-prev::before, .product-slider .slick-next::before {
+    color: #ff0066 !important;
+}
+
+.facts:last-child {
+    border-right: none;
+}
+
+.facts span, .facts p {
+    font-weight: 700;
+    color: #0066cc;
+    text-align: center;
+}
+
+.facts span {
+    font-size: 30px;
+}
+
+/* ------------------------------------------------------- */
+/* FRANCHISE PAGE */
+.wrap.f {
+    margin-top: 30px;
+}
+
+.ftext {
+    background: #0066cc;
+    border-radius: 35px;
+}
+
+.ftext.active {
+    background: #ff0066;
+}
+
+.ftext img {
+    float: left;
+    margin: 8px;
+}
+
+.toggle-icon {
+    position: absolute;
+    right: 30px;
+    top: 24px;
+}
+
+.ftext .toggle-icon .fa-chevron-down {
+    display: none;
+}
+
+.ftext.active .toggle-icon .fa-chevron-right {
+    display: none;
+}
+
+.ftext.active .toggle-icon .fa-chevron-down {
+    display: block;
+}
+
+.ftext h4 {
+    display: inline-block;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 62px;
+    margin: 0 0 0 40px;
+}
+
+.fcontent {
+    padding: 30px 40px 0px;
+    margin: 0 62px;
+	position: relative;
+}
+
+.fcontent.gstarted {
+    padding: 10px 10px 50px;
+    display: block;
+}
+
+.gstarted {
+    padding-left: 75px;
+}
+
+.fcontent h4, span.toggle {
+    display: block;
+    font-size: 15px;
+    color: #ff0066;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.fcontent h4.active {
+    color: #ff0066;
+}
+
+.fcontent.faq h4 {
+    color: #0066cc;
+}
+
+.fcontent.faq h4.active {
+    color: #ff0066;
+}
+
+.fcontent p span {
+    /*color: #ff0066;*/
+}
+
+.fcontent li {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.fform {
+    padding: 20px 5px 20px 25px;
+    background: #f8f8f8;
+}
+
+.fform h4, .fform p {
+    text-align: center;
+}
+
+.fform h4 {
+    color: #0066cc;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.fform .p {
+    margin-bottom: 40px;
+    display: block;
+}
+
+.fform p {
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.fform .column3 {
+    width: 30%;
+    float: left;
+    margin-right: 19px;
+}
+
+.fform .column2 {
+    width: 65%;
+    float: left;
+}
+
+.column1 input[type="text"] {
+    height: 90px;
+}
+
+.column1 input[type="text"], .column2 input[type="text"], .column3 input[type="text"] {
+    background: #ffffff;
+	width: 93%;
+}
+
+span.list_icon {
+    color: #ffffff;
+    background: #ff0066;
+    padding: 15px 16px;
+    border-radius: 50%;
+    font-size: 25px;
+    height: 20px;
+    width: 20px;
+    display: block;
+    text-align: center;
+    border: solid white 3px;
+    box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.54);
+    position: absolute;
+}
+
+.list_item {
+    background: url(http://beta.myfloatisimo.com/wp-content/uploads/2017/11/dot.png) repeat-y 21px -11px;
+    padding-bottom: 14px;
+}
+
+.list_item:last-child {
+    background: none;
+}
+
+.toggle_list_item {
+    margin: 20px 0;
+    padding: 5px;
+}
+
+span.toggle:before {
+    content: "\271A ";
+    background: #0066cc;
+    border-radius: 50%;
+    padding: 2px 5px;
+    color: #ffffff;
+    margin-right: 20px;
+}
+
+span.toggle.active:before {
+    content: "  \2013";
+    padding: 2px 8px; 
+}
+
+.toggle_list_item p {
+    margin-left: 40px;
+}
+
+/* ------------------------------------------------------- */
+/* PRODUCT LIST PAGE */
+.product-list.subcategory, .product-list.category {
+    text-align: center;
+}
+
+.product-item {
+    width: 223px;
+    display: inline-block;
+    text-align: center;
+	margin-bottom: 50px;
+}
+
+.product-item a {
+    text-decoration: none;
+}
+
+.product-item a img {
+    width: 90%;
+    padding: 0;
+    margin: 5%;
+	min-height: 235px;
+}
+
+.product-item a span.text {
+    display: block;
+    font-weight: 600;
+    color: #0066cc;
+}
+
+.product-item a span.text:hover {
+    color: #ff0066;
+}
+
+.product-list {
+	text-align:center;
+}
+
+.product-cat-item {
+    width: 282px;
+    display: inline-block;
+    text-align: center;
+	margin-bottom: 50px;
+	max-width:100%;
+}
+
+.one .product-cat-item {
+    width: 100%;
+}
+
+.two .product-cat-item {
+    width: 565px;
+}
+
+.three .product-cat-item {
+    width: 376px;
+}
+
+.product-cat-item a {
+    text-decoration: none;
+}
+
+.product-cat-item a img {
+    width: 90%;
+    padding: 0;
+    margin: 5%;
+}
+
+.product-cat-item a span.text {
+    display: inline-block;
+	padding: 8px 20px;
+	background: #ff0066;
+	border-radius: 20px;
+	margin: 10px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.product-cat-item a:hover span.text {
+    background: #0066cc;
+}
+
+/* ------------------------------------------------------- */
+/* EVENTS PAGE */
+section.event {
+    padding: 50px 20px 130px;
+    background: url(/wp-content/uploads/2018/03/event-bg.png) center bottom no-repeat transparent;
+    background-size: cover;
+}
+
+.event h3.heading {
+    color: #ff0066;
+    font-weight: 700;
+    padding: 10px 0;
+    font-size: 35px;
+    margin: auto;
+    overflow-wrap: break-word;
+}
+
+.event span {
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.event span.subtitle {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.event span.subtext {
+    color: #00ccff;
+    font-weight: 700;
+}
+
+.package {
+    width: 50%;
+    float: left; 
+}
+
+.party-title {
+    padding: 20px 50px;
+    border-radius: 12px 12px 0 0;
+    color: #ffffff;
+}
+
+.party-title span {
+    text-align: left;
+    padding: 3px 0;
+}
+
+span.ptitle {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.party-content {
+    padding: 20px 50px 50px;
+    border-radius: 0 0 12px 12px;
+    color: #ffffff;
+}
+
+.party-content span {
+    text-align: left;
+    padding: 20px 0 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.snack, .orig {
+    margin: 20px 15px;
+}
+
+.snack .party-title {
+    background-color: #772c8b;
+}
+
+.snack .party-content {
+    background-color: #ba78ce;
+}
+
+.orig .party-title {
+    background-color: #2e9adb;
+}
+
+.orig .party-content {
+    background-color: #20cbff;
+}
+
+ul.icon-left li {
+    list-style-image: url(/wp-content/uploads/2018/03/event-bullet.png);
+    list-style-position: inside;
+    overflow-wrap: break-word;
+}
+
+h4.note {
+    text-align: center;
+    color: #ff0066;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+.fundraise {
+    background-color: #ffffff;
+    padding: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.fundraise h3.heading {
+    color: #f50265 !important;
+    margin: 0;
+}
+
+.fundraise .steps {
+    padding: 20px 0;
+}
+
+.fundraise .steps span {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px 0;
+    display: block;
+}
+
+.steps ol.num-icon li {
+    color: #3cccfe;
+}
+
+.steps ol.num-icon {
+    list-style-type: decimal;
+    list-style-position: inside;
+    text-indent: 25px;
+}
+
+.cnum p {
+    margin: 0;
+    color: #0099cc;
+    font-weight: bold;
+    padding-left: 60px;
+    line-height: 42px;
+}
+
+.cnum p a {
+    width: 36px;
+    height: 36px;
+    background-image: url(/wp-content/uploads/2018/03/ol-bullet.png);
+    display: inline-block;
+    text-align: center;
+    line-height: 36px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 8px 10px 8px -46px;
+}
+
+/* ------------------------------------------------------- */
+/* WIDGETS */
+.widget {
+    display: block;
+    border: #e9e9e9 .5px solid;
+}
+
+.left.tw .widget .widget-title h3 {
+    background: url(http://beta.myfloatisimo.com/wp-content/uploads/2017/11/twitter.png) #01adff no-repeat 22px;
+}
+
+.left.fb .widget .widget-title h3 {
+    background: url(http://beta.myfloatisimo.com/wp-content/uploads/2017/11/facebook.png) #01579b no-repeat 22px;
+}
+
+.left.tw .widget .widget-title h3, .left.fb .widget .widget-title h3 {
+    line-height: 50px;
+    display: block;
+    padding: 10px 30px 10px 65px;
+    color: #ffffff;
+    margin: 0;
+}
+
+ul.tweets {
+    padding: 20px 30px 30px;
+}
+
+li.avatar a {
+    text-decoration: none;
+    color: #3c3c3c;
+}
+
+.left.tw .widget .twitter-follow-container {
+    position: absolute;
+    margin-top: -152px;
+    right: 30px;
+}
+
+.stt-em {
+    margin-top: 20px;
+	font-style: normal !important;
+}
+
+.stt-em a {
+    color: #a3a0a0 !important;
+}
+
+.widget-title h3 a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a#follow-button {
+    border-radius: 0;
+    background-color: #0544a5 !important;
+}
+
+.sfp-container {
+    height: 111px;
+}
+
+.fb_iframe_widget iframe {
+    padding: 20px;
+}
+
+.widget_text.widget {
+    margin: 8px;
+}
+
+._1drm ._1drn {
+    border: 0 !important;
+}
+
+.wpcf7-form-control.wpcf7-textarea {
+    border: 1px solid;
+    background: #ffffff !important;
+    width: 95% !important;
+}

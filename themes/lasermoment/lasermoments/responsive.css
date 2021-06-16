@@ -1,0 +1,420 @@
+@charset "utf-8";
+/* CI Document */
+
+@media screen and (max-width:1505px) {
+	/*HEADER*/
+	header.head {
+		background-size: auto 100%;
+		background-position: center center;
+	}
+}
+
+@media screen and (max-width:1410px) {
+	/*BANNER*/
+	.slick-prev, .slick-next {
+		display: none !important;
+	}
+}
+
+@media screen and (max-width:1392px) {
+	/*BANNER COLUMN*/
+	.commercial, .industrial {
+		width: 46%;
+	}
+	a.com-btn, .commercial h3 {
+		left: 0;
+	}
+	a.ind-btn, .industrial h3 {
+		right: 0;
+		text-align: right;
+	}
+}
+
+@media screen and (max-width:1160px) {
+	/* HEADER */
+	header.head {
+		background-size: cover;
+	}
+	header .top {
+		padding: 20px;
+	}
+	.nav li a {
+		padding: 15px 40px 15px;
+	}
+	
+	/*BANNER*/
+	.banner-content {
+		padding: 70px 20px 170px;
+	}
+
+	/*BANNER COLUMNS*/
+	.commercial, .industrial {
+		margin: 20px auto 50px;
+		width: 100% !important;
+		display: block;
+		position: relative;
+		float: none;
+		max-width: 500px;
+	}
+	.banner-column h3 {
+		padding: 10px 0;
+		display: block;
+		width: 100%;
+		text-align: left !important;
+		text-indent: 20px;
+	}
+	
+	/*ABOUT SECTION*/
+	section.about {
+		padding: 20px 20px 60px;
+	}
+	.home-about img {
+		float: left;
+		display: block;
+		width: 28%;
+		text-align: center;
+		margin: auto;
+	}
+	.home-about .a-content {
+		padding: 0;
+	}
+
+	/*WHAT'S NEW*/
+	.news-item {
+		display: block;
+		padding: 20px;
+		margin: 0;
+		float: none;
+		max-width: 100%;
+	}
+	li.n-item {
+		margin: 15px 0;
+	}
+	.container p {
+		padding: 0 0 20px;
+		text-align: justify;
+	}
+	span.r-more a {
+		padding: 0;
+	}
+	.sidebar {
+		float: none;
+		padding: 30px 0 20px;
+		display: block;
+		text-align: center;
+	}
+
+	/*WELCOME PAGE*/
+	section.welcome-thumbnails {
+		margin: 20px 20px 40px;
+	}
+	.wtfull img {
+		width: 48%;
+	}
+
+	/*INDUSTRIAL PAGE*/
+	section.industrial-thumbnails img {
+		margin: 40px 20px 20px;
+	}
+	.it-content {
+		width: 63%;
+		padding-right: 20px;
+	}
+
+}
+
+@media screen and (max-width:1024px) {
+	/*ABOUT SECTION*/
+	.a-content p {
+		padding: 0 !important;
+		text-align: justify;
+		font-size: 16px;
+		line-height: 22px;
+	}
+	
+}
+
+@media screen and (max-width:960px) {
+	/* HEADER */
+	.nav li a {
+		padding: 15px 30px 15px;
+	}
+
+	/* WELCOME PAGE*/
+	.ls-left p, .ls-right p {
+		margin: 0 auto;
+		padding: 0 20px;
+	}
+
+}
+
+@media screen and (max-width:860px) {
+	h1.heading {
+		display: block;
+		text-align: center;
+	}
+	span.h-next {
+		float: none;
+		text-align: center;
+		display: block;
+	}
+}
+
+@media screen and (max-width:800px) {
+	/* COMMERCIAL PAGE */
+	.cd .cat {
+		width: 100%;
+		float: none;
+		margin: 10px auto;
+	}
+	.cd img {
+		text-align: center;
+		display: block;
+		max-width: unset;
+	}
+
+	/*INDUSTRIAL PAGE*/
+	section.industrial-thumbnails {
+		padding: 30px 20px;
+	}
+	section.industrial-thumbnails img {
+		width: 50%;
+		margin: 40px 20px 20px 0;
+	}
+	.it-content {
+		width: 46%;
+		padding: 0;
+	}
+	.it-content p {
+		text-align: justify;
+	}
+
+}
+
+@media screen and (max-width:768px) {
+	/* HEADER */
+	.top .left {
+		float: none;
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.top .left img {
+		padding: 6px 0 10px;
+		width: 100%;
+		max-width: 300px;
+	}
+	.top .right {
+		float: none;
+		display: block;
+		width: 100%;
+		color: #ffffff;
+		text-align: center;
+	}
+	.top .right .quote-btn {
+		margin: 15px auto;
+		display: block;
+	}
+	.top .right a, .top .right span {
+		float: none;
+	}
+	.top .right a.email, .top .right a.phone {
+		margin: 5px auto;
+	}
+	a.phone, a.email {
+		text-indent: 40px;
+		width: 200px;
+		text-align: left;
+	}
+	.nav ul.menu {
+		display: none;
+	}
+
+	/* MOBILE MENU */
+	#wprmenu_bar {
+		background: #0D0D0D !important;
+		margin: 20px !important;
+		padding: 15px 15px 10px !important;
+	}
+	#wprmenu_bar .wprmenu_icon {
+		margin: 0 !important;
+	}
+
+	/* BANNER */
+	h1.banner-text {
+		font-size: 30px;
+		line-height: 40px;
+		text-shadow: 1px 0px 2px #000000;
+	}
+	
+	/* ABOUT SECTION */
+	.home-about img {
+		float: none;
+		width: 250px;
+		padding: 30px 0;
+	}
+	.home-about .a-content {
+		float: none;
+		width: 100%;
+	}
+	
+	/* WHAT'S NEW */
+	.news {
+		padding: 0 0 50px;
+	}
+	.news-item img {
+		float: none;
+		padding: 20px 0;
+		text-align: center;
+		display: block;
+		margin: auto;
+		width: 100%;
+	}
+	
+	/* FOOTER */
+	.m-left, .c-right {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.m-left {
+		padding: 0;
+	}
+	.m-left ul.footer-menu {
+		display: none;
+	}
+	.c-right {
+		padding: 10px 0;
+	}
+
+	/* CONTACT PAGE */
+	.contact-us .cu-left, .contact-us .cu-right {
+		float: none;
+		width: 100%;
+	}
+
+	/* ABOUT US PAGE */
+	.about-column .ac-left, .about-column .ac-right {
+		float: none;
+		width: 100%;
+	}
+
+	/* WELCOME PAGE */
+	section.welcome-thumbnails h2.title {
+		text-align: center;
+	}
+	section.welcome-thumbnails .wrap .wt {
+		float: none;
+		width: 100%;
+	}
+	.wt.left, .wt.right {
+		margin: 0;
+	}
+	.wtfull img {
+		width: 100%;
+		float: none;
+    	margin: 0;
+	}
+	.ls-left, .ls-right {
+		width: 100%;
+		float: none;
+		margin: 0 0 40px;
+	}
+	
+}
+
+@media screen and (max-width:568px) {
+	/*HEADING*/
+	span.h-next {
+		line-height: 22px;
+		padding-top: 10px;
+	}
+
+	/*BANNER*/
+	h1.banner-text {
+		text-align: center;
+	}
+	.banner-btn {
+		margin: 25px auto;
+	}
+
+	/* BANNER COLUMN */
+	section.wb {
+		padding: 20px;
+	}
+	.bc-text {
+		height: auto;
+	}
+	.banner-column a {
+		background: #ffffff;
+		color: #ef212b;
+		top: 22px;
+		bottom: unset;
+		z-index: 99;
+	}
+	a.com-btn {
+		right: 0;
+		left: unset;
+	}
+	.bc-text p {
+		padding: 40px 20px 20px;
+	}
+	
+	/* WHAT'S NEW */
+	li.n-item {
+		padding: 30px 15px 0;
+	}
+	.sidebar img {
+		max-width: 300px;
+		width: 100%;
+	}
+
+	/* CONTACT PAGE */
+	.contact-us .cleft, .contact-us .cright {
+		width: 100%;
+	}
+	.wpcf7-radio .wpcf7-list-item {
+		width: 50%;
+	}
+	fieldset.ind {
+		text-indent: 15px;
+	}
+
+	/*GEN. SETTINGS*/
+	img.alignright, img.alignleft {
+		float: none;
+		margin: 0 0 20px;
+		max-width: 100%;
+		height: auto;
+	}
+	.about-us .pc h2.title {
+		text-align: center;
+	}
+
+	/* COMMERCIAL PAGE */
+	.cat p {
+		text-align: justify;
+	}
+
+	/*INDUSTRIAL PAGE*/
+	section.industrial-thumbnails img {
+		width: 100%;
+		margin: 40px auto 10px;
+		float: none;
+	}
+	.it-content {
+		width: 100%;
+		float: none;
+	}
+	.it-content p {
+		text-align: justify;
+	}
+}
+
+@media screen and (max-width:568px) {
+	/* BANNER COLUMN */
+	.banner-column a {
+		top: unset;
+		bottom: 0px;
+	}
+}

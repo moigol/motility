@@ -1,0 +1,621 @@
+@charset "utf-8";
+/* CI Document */
+
+@media screen and (max-width:1190px) {
+	.slick-next, .slick-prev {
+		 display:none !important;
+	}
+	section.contact-form {
+		padding: 20px 20px 130px;
+	}
+	section.contact-form p {
+		margin: 0 0 10px;
+	}
+	section.location {
+		padding: 20px 0 50px;
+	}
+}
+
+@media screen and (max-width:1160px) {
+	p, h1,h2,h3,h4,h5,h6 {
+		margin: 10px 40px 20px;
+	}
+	
+	/* HEADER */
+	section.location .wrapper {
+		width: 95%;
+	}
+	
+	/* SOCIAL SECTION */
+	.left.fb {
+		width: 47.5%;
+	}
+	section.social .ig img {
+		width: 15%;
+	}
+	
+	/* LOCATION SECTION */
+	section.location .map {
+		width: 58%;
+	}
+	
+	/* FOOTER */
+	.footer.right span {
+		font-size: 11px;
+	}
+	/* OUR COMPANY PAGE */
+	.text-r p {
+		padding-right: 0;
+	}
+	section.page-content.mission {
+		background: url(http://beta.myfloatisimo.com/wp-content/uploads/2017/10/our-company-mission.jpg) no-repeat left 35px !important;
+	}
+	
+	/* SNEAKPEEK PAGE */
+	.content-wrapping p {
+		margin: 0;
+	}
+	/* OUR CREATION PAGE */
+	.page-content .wrap .ci {
+		width: 46%;
+		margin: 20px 0 0 40px;
+	}
+	/* LOYALTY AND GIFT CARDS PAGE */
+	.g-content p, .l-content p {
+		margin: 0;
+	}
+	.g-card img, .l-card img {
+		width: 40%;
+	}
+	/* PRODUCTS PAGE */
+	.details p {
+		margin: 0 !important;
+	}
+	/* FRANCHISE PAGE */
+	.list_item p, .text p {
+		margin: 10px 0 20px;
+	}
+}
+
+@media screen and (max-width:1024px) {
+	/*ABOUT SECTION*/
+	h2.heading {
+		padding-bottom: 30px;
+	}
+	section.about p.a-content {
+		line-height: 18px;
+		padding-bottom: 20px;
+	}
+	/* OUR CREATION PAGE */
+	.treats .text-t {
+		background: rgba(0, 0, 0, 0.5);
+		padding: 20px;
+	}
+	/* PRODUCTS PAGE */
+	.facts p {
+		font-size: 10px;
+	}
+	.facts span {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width:998px) {
+	/*.page-content h3.header-text {
+		padding: 0 40px 20px;
+	}*/
+	.page-content h3.header-text {
+		padding: 0 0 20px;
+		font-size: 20px;
+		line-height: 25px;
+	}
+	/* HEADER */
+	header ul.menu {
+		width: 65%;
+	}
+	
+	/* BANNER */
+	.banner-content h1.header {
+		font-size: 50px;
+		line-height: 60px;
+		padding: 0 0;
+		margin:0;
+	}
+	sup {
+		margin-top: -5px;
+	}
+	.banner-content h1.header p {
+		line-height: 50px;
+	}
+	/* FOOTER */
+	.footer.left {
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+	.footer.left ul.menu li {
+		padding: 15px 8px;
+	}
+	.social-icon {
+		width: 100%;
+		float: none;
+		text-align: center;
+		padding: 0;
+	}
+	.footer.right {
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+	
+	/* SOUR CREATION PAGE */
+	.ci.left h4.title, .ci.right h4.title {
+		text-align: center;
+		border-top: #cacaca 1px solid;
+		width: 80%;
+		display: block;
+		margin: auto;
+		padding-top: 20px;
+	}
+	.ci.right p, .ci.left p {
+		text-align: center;
+	}
+	.page-content .wrap .ci {
+		float: none;
+		width: 100%;
+		margin: 20px 0;
+	}
+	/* OUR COMPANY PAGE */
+	.text-r {
+		width: 60%;
+		background: rgba(255, 255, 255, 0.5);
+    	padding: 20px 0;
+	}
+	/* LOYALTY AND GIFT CARDS PAGE */
+	.l-card, .g-card {
+		background-size: cover;
+	}
+	.l-content p, .g-content p {
+		padding-right: 0;
+	}
+	.g-card img, .l-card img {
+		width: 62%;
+		margin: auto;
+		display: block;
+		float: none;
+	}
+	.g-content, .l-content {
+		float: none;
+		width: 90%;
+		padding: 5%;
+		color: #ffffff;
+		display: block;
+	}
+	/* FRANCHISE PAGE */
+	.fform {
+		padding: 20px;
+	}
+	.fform .column3, .fform .column2, .fform .column1 {
+		width: 90%;
+		float: none;
+		margin-right: 0;
+	}
+	
+	#responsive-menu-container {
+		background: #67e2fa !important;
+	}
+	#responsive-menu-container #responsive-menu-wrapper {
+		background: #67e2fa !important;
+	}
+	#responsive-menu-container #responsive-menu li.responsive-menu-item a {
+		border-bottom: 1px solid #67e2fa !important;
+		background-color: #67e2fa !important;
+		color:#000000 !important;
+	}
+	#responsive-menu-container #responsive-menu li.responsive-menu-item a .responsive-menu-subarrow {
+		border-left: 1px solid #67e2fa !important;
+		background-color: #67e2fa !important;
+		color: #000000 !important;
+	}
+	#responsive-menu-search-box {
+		display: none !important;
+	}	
+	#responsive-menu-container #responsive-menu li.responsive-menu-item a:hover {
+		background: #ff0066 !important;
+		color: #ffffff !important;
+	}
+	#responsive-menu-container #responsive-menu li.responsive-menu-item a:hover .responsive-menu-subarrow {
+		border-left: 1px solid #ff0066 !important;
+		background-color: #ff0066 !important;
+	}
+	.responsive-menu-open .responsive-menu-inner, .responsive-menu-open .responsive-menu-inner::before, .responsive-menu-open .responsive-menu-inner::after {
+		background-color: #000;
+	}
+	.responsive-menu-inner, .responsive-menu-inner::before, .responsive-menu-inner::after {
+		background-color: #000;
+	}
+
+	/* EVENTS PAGE */
+	.package {
+	    width: 100%;
+	    float: none;
+	    margin: auto;
+	    padding: 0;
+	}
+	h4.note {
+	    background-color: #ffffff;
+	    padding: 40px 10px;
+	    margin: 0 auto;
+	}
+	.fundraise .content p {
+	    margin: 10px 0 20px;
+	}
+}
+
+@media screen and (max-width:870px) {
+	.cform {
+		width: 50%;
+		display: block;
+	}
+}
+
+@media screen and (max-width:768px) {
+	p {
+		/*text-align: justify;*/
+	}
+	/* PAGE HEADER */
+	.page-header h2.heading {
+		text-align: center;
+		line-height: 35px;
+	}
+	.page-content h3.heading {
+		padding: 20px;
+	}
+	.page-content h3.header-text {
+		font-size: 18px;
+		line-height: 22px;
+	}
+	.page-header span.h-next {
+		padding: 10px 0 0;
+		text-align: center;
+		display: block;
+	}
+	ul.menu-tabs li a {
+		font-size: 12px;
+	}
+	/* HEADER */
+	header ul.menu {
+		display: none;
+	}
+	/* BANNER */
+	.slide {
+		background-size: cover;
+	}
+	.banner-content h1.header {
+		font-size: 8vw;
+		line-height: 9vw;
+	}
+	sup {
+		font-size: 30px;
+	}
+	/* ABOUT SECTION */
+	section.about img {
+		width: 100%;
+		margin: auto;
+		float: none;
+	}
+	section.about p.a-content {
+		line-height: 18px;
+		padding: 20px 30px;
+		margin: auto;
+		text-align: left;
+	}
+	/* CARDS SECTION */
+	section.cards {
+		margin: 0;
+	}
+	section.cards h2.heading {
+		margin: 10px 0 0;
+		padding: 0 20px;
+		line-height: 45px;
+	}
+	p.c-content {
+		height: 100px;
+	}
+	section.about a.btn {
+		display: table;
+		margin: 20px auto;
+	}
+	.left.gift, .right.loyalty {
+		width: 92%;
+		float: none;
+		margin: 0 auto;
+		padding: 20px 0;
+	}
+	.left.fb, .left.tw {
+		float: none;
+		width: 100%;
+		margin: 5px 0;
+	}
+	
+	/* LOCATION SECTION */
+	section.location .wrapper {
+		margin: 20px auto;
+	}
+	section.location .address {
+		width: 90%;
+		float: none;
+		padding: 5%;
+	}
+	.address h4 {
+		text-align: center;
+		padding: 20px 0;
+	}
+	.address .a-icon {
+		float: none;
+		display: table;
+		margin: auto;
+	}
+	.address .add-info {
+		float: none;
+		display: table;
+		margin: auto;
+		text-align: center;
+	}
+	section.location .map {
+		width: 100%;
+		float: none;
+	}
+	
+	/*FOOTER*/
+	.footer.left {
+		display: none;
+	}
+	/* OUR COMPANY PAGE */
+	.text-l {
+		width: 100%;
+		padding: 0;
+	}
+	img.image-r {
+		width: 100%;
+		float: none;
+	}
+	
+	.text-r p {
+		font-size: 16px;
+		line-height: 25px;
+		text-align: left;
+	}
+	.text-r img.alignleft {
+		padding-bottom: 130px;
+		width: 80px;
+		height: 130px;
+	}
+	/* SNEAKPEEK PAGE */
+	.box-left img.sweets, .box-right img.sweets {
+		float: none;
+		width: 50%;
+		margin: auto;
+		display: block;
+		padding: 50px 0;
+	}
+	.box-left .content-wrapping, .box-left .content-wrapping p, .box-right .content-wrapping, .box-right .content-wrapping p {
+		display: block;
+		width: 90%;
+		margin: 0 auto 50px;
+		text-align: center;
+		padding: 0 5%;
+	}
+	/* LOYALTY AND GIFT CARDS PAGE */
+	.l-content p, .g-content p {
+		padding-right: 0;
+	}
+	/* PRODUCTS PAGE */
+	.pd img {
+		float: none;
+		width: 50%;
+		margin: auto;
+		text-align: center;
+		display: block;
+		padding: 20px;
+	}
+	.details {
+		float: none;
+		padding: 5%;
+		width: 90%;
+	}
+	.details h3.heading {
+		padding: 20px 0;
+	}
+	section.page-header {
+		padding: 0 0 10px;
+	}
+	.page-header h2.heading {
+		padding: 20px 0 0;
+	}
+	header a.logo {
+		width: auto;
+		margin: 30px auto 0;
+		display: table;
+	}
+	section.page-content.treats {
+		background-position: center -92px;
+		background-color: #0066cc;
+		background-size: auto 64%;
+	}
+	section.page-content.treats {
+		padding: 352px 0 0;
+	}
+}
+
+
+@media screen and (max-width:568px) {
+	/*BANNER*/
+	
+	.banner-content {
+		float: none;
+		display: block;
+		padding: 50px 20px 179px;
+		width: auto;
+		background: rgba(255, 255, 255, 0.6);
+		max-height: 332px !important;
+		height: 332px !important;
+	}
+	
+	.banner-content p {
+		padding: 10px 10px;
+	}
+	
+	/* OUR COMPANY PAGE */
+	.text-r img.alignleft {
+		float: none;
+		padding-right: 0;
+		display: block;
+		margin: 0 auto 20px;
+		width: 70px;
+		height: auto;
+		padding-bottom: 10px;
+	}
+	.text-r p {
+		text-align: center;
+	}
+	/* PAGE HEADER */
+	ul.menu-tabs li:first-child, ul.menu-tabs li:last-child {
+		border-radius: unset;
+	}
+	ul.menu-tabs li {
+		padding: 8px 0px;
+		width: 50%;
+	}
+	/* LOYALTY AND GIFT CARDS PAGE */
+	.g-card img, .l-card img {
+		width: 100%;
+		padding: 0;
+	}
+	/* PRODUCT DETAILS PAGE */
+	.sizes {
+		text-align: center;
+	}
+	.sizes span {
+		font-size: 10px;
+	}
+	/* FRANCHISE PAGE */
+	.ftext {
+		border-radius: 0;
+	}
+	.fcontent {
+		padding: 30px 0 0px;
+	}
+	.fcontent.gstarted {
+		margin-right: 10px;
+	}
+	
+	.widget_text.widget {
+		margin: 0;
+	}
+	#sb_instagram .sb_instagram_header {
+		width: 90% !important;
+	}
+	.banner-content a.btn {
+		margin: 70px auto 0;
+	}
+	.banner-content h1.header p {
+		line-height: 40px;
+	}
+	.ftext h4 {
+		line-height: 20px !important;
+		margin: 0 0 10px 10px;
+		width: 66%;
+		min-height: 60px;
+		padding: 10px 0;
+	}
+	.mission .wrap.m .heading {
+		margin-bottom: 380px;
+	}
+	section.page-content.mission {
+		background-position: center 35px !important;
+	}
+	.mission .wrap.m {
+		max-width: 1230px;
+		height: 864px;
+		padding: 200px 0 calc;
+	}
+	.text-r {
+		background: transparent;
+		padding: 30px 0 0;
+		width: 100%;
+		float: none;
+	}
+	.toggle-icon {
+		right: 10px;
+		top: 38px;
+	}
+	section.page-content.treats {
+		padding: 204px 0 0;
+	}
+	section.page-content.treats {
+		background-position:center -50px;
+		background-color:#0066cc;
+		background-size: auto 32%;
+	}
+	.wrap.f {
+		margin-top: 10px;
+	}
+	/* CONTACT US PAGE */
+	.cform {
+		width: 100%;
+		display: inline-block;
+	}
+	section.contact-form input[type="email" i], input[type="number" i], input[type="tel" i], input[type="url" i], input[type="text" i] {
+		width: 100%;
+		padding: 10px 0;
+	}
+
+	/* EVENTS PAGE */
+	.party-title {
+	    padding: 20px;
+	}
+	.party-content {
+	    padding: 20px 20px 50px;
+	}
+	.fundraise {
+	    padding: 50px 10px;
+	}
+}
+
+@media screen and (max-width:389px) {
+	/* PAGE HEADER */
+	ul.menu-tabs li {
+		width: 100%;
+		border-bottom: #ffffff 1px solid;
+	}
+	ul.menu-pd-tabs li {
+		margin: 5px;
+	}
+	/*FOOTER*/
+	.footer.right span {
+		padding-right: 0px;
+	}
+	.left.tw .widget .twitter-follow-container {
+		margin-top: -175px;
+		right: 30px;
+	}
+	.details h3.heading, .details p {
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width:320px) {
+	.left.tw .widget .twitter-follow-container {
+		margin-top: -193px;
+		right: 8px;
+	}
+}
+
+@media screen and (max-width:900px) {
+	.slide {
+		background-size: auto 100% !important;
+		background-position: -313px 0 !important;
+	}
+}

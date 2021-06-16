@@ -1,0 +1,984 @@
+/* 
+	Theme Name: Fastpro HomeBuyers
+	Author: Creative Impression
+	Author URI: www.creativeimpression.com
+	Description: Custom theme for Fastpro HomeBuyers.
+*/
+
+
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	outline: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size:14px;
+	text-decoration: none;
+	line-height: 20px;
+}
+
+ol, ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+    padding-left: 2.5em;
+    text-indent: -0.7em;
+	list-style-type: none;
+}
+
+li::before {
+	color: #03a9f4;
+    content: "• ";
+    font-size: 22px;
+    vertical-align: sub;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clear { 
+	clear:both;
+}
+
+.wrap {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+
+p {
+    padding: 10px 0 20px;
+    line-height: 22px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+    line-height: 55px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+strong {
+    font-weight: 700;
+}
+
+em {
+    font-style: italic;
+}
+
+.btn {
+    background-color: #03a9f4;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+	display: inline-block;
+}
+
+.btn:hover {
+    color: #ffffff;
+    background: #1d3763;
+}
+
+input.wpcf7-form-control.wpcf7-submit:hover {
+	background: #1d3763 !important;
+}
+
+img.aligncenter {
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 750px;
+	height: auto;
+}
+
+img.alignleft {
+    float: left;
+    padding: 0 10px;
+}
+
+img.alignright {
+    float: right;
+    padding: 0 10px;
+}
+
+/* ------------------------------------------------------- */
+/* PAGES */
+
+h2.heading {
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    padding: 20px 15px;
+	color: #ffffff;
+}
+
+section.page-header {
+    padding: 44px 0;
+    background-size: cover;
+}
+
+.main-content {
+    padding: 30px 15px 50px;
+}
+
+h2.page-content {
+    font-size: 26px;
+    font-weight: 300;
+    padding: 20px 0;
+	color: #03a9f4;
+}
+
+section.sub {
+    background: #f5f5f5;
+    padding: 55px 25px;
+}
+
+.content-box {
+    background: #ffffff;
+    padding: 20px 60px 50px;
+	box-shadow: 0px 0px 12px rgba(50, 50, 50, 0.25);
+	margin: 0 15px;
+}
+
+.header-content {
+    padding: 30px 80px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffffff;
+}
+
+.page section.product-content {
+    padding: 50px 15px;
+}
+
+.page section.page-header {
+    min-height: 140px;
+}
+
+.page h2.heading {
+    line-height: 45px;
+}
+
+.page-cont {
+    padding: 0 15px;
+}
+/* ------------------------------------------------------- */
+/* HEADER */
+
+header .wrap.top {
+	position: relative;
+}
+
+.top a.logo {
+    float: left;
+}
+
+.top a.logo img {
+    width: 400px;
+	padding: 25px 15px 15px;
+}
+
+.top .user {
+	font-size: 12px;
+}
+
+.top .user, .top .nav {
+    text-align: right;
+    color: #ffffff;
+    float: right;
+    width: 55%;
+	padding-right: 15px;
+}
+
+.user a.btn {
+    margin: 10px 0 10px 40px;
+}
+
+i.fa.fa-phone-square, i.fa.fa-envelope, i.fa.fa-home {
+    margin: 0 5px;
+}
+
+span.phone, span.email {
+    padding: 0 0 0 20px;
+	display: inline-block;
+}
+
+span.phone a, span.email a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+ul.menu li {
+    display: inline-block;
+	padding-left: unset;
+}
+
+.top ul.menu li a {
+    color: #ffffff;
+    font-size: 13px;
+    padding: 12px 10px 27px;
+}
+
+.top ul.menu li:last-child a {
+    padding-right: 0;
+}
+
+ul.menu li::before {
+    content: "";
+    font-size: unset;
+    vertical-align: unset;
+}
+
+ul.menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: block;
+}
+
+ul.menu li a:hover, .footer-widgets .nav ul.menu li a:hover,
+span.phone a:hover, span.email a:hover,  .column a:hover {
+	color: #33ccff;
+}
+
+ul.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 12px rgba(50, 50, 50, 0.25);
+    text-align: left;
+    width: 170px;
+}
+
+ul.menu li:hover > ul.sub-menu {
+    display: block;
+    z-index: 99;
+    background: #1d3763a8;
+}
+
+ul.sub-menu li {
+    display: block;
+}
+
+.sub-menu li a {
+    display: block;
+	padding: 10px 20px !important;
+}
+
+/* ------------------------------------------------------- */
+/* BANNER */
+.slider-item {
+    padding: 100px 15px;
+    display: block;
+}
+
+.slide-content {
+    display: block;
+    width: 50%;
+    color: #ffffff;
+    padding: 20px 15px;
+    float: left;
+}
+
+.slide-content span {
+    font-size: 20px;
+    padding: 10px 0;
+    display: block;
+}
+
+.slide-form-mobile {
+    display: none;
+}
+
+.hcform {
+    background: #000000d1;
+}
+
+.cform {
+	border: 3px solid #1d3763;
+}
+
+.hcform, .cform {
+    max-width: 300px;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    padding: 30px;
+}
+
+.hcform span.cu, .cform span.cu {
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 700;
+    text-align: left;
+    display: block;
+    padding-bottom: 25px;
+    border-bottom: #03a9f4 1px solid;
+}
+
+.form span.wpcf7-form-control-wrap input {
+    width: 94%;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.hcform input.wpcf7-form-control.wpcf7-submit, .slide-form-mobile a.btn {
+    background: #03a9f4;
+}
+
+.hcform input.wpcf7-form-control.wpcf7-submit, .cform input.wpcf7-form-control.wpcf7-submit, .slide-form-mobile a.btn {
+	padding: 10px 20px;
+	font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+	color: #ffffff;
+}
+
+.cform input.wpcf7-form-control.wpcf7-submit {
+    background: #1d3763;
+}
+
+.form span.wpcf7-form-control-wrap input, .hcform input.wpcf7-form-control.wpcf7-submit, .cform input.wpcf7-form-control.wpcf7-submit, .slide-form-mobile a.btn, textarea.wpcf7-form-control.wpcf7-textarea {
+    font-family: 'Open Sans', sans-serif !important;
+    border-radius: 3px;
+    border: none;
+}
+
+.cform .form span.wpcf7-form-control-wrap input, .cform input.wpcf7-form-control.wpcf7-submit, .cform textarea.wpcf7-form-control.wpcf7-textarea {
+    box-shadow: 1px 1px 5px #999;
+}
+
+textarea.wpcf7-form-control.wpcf7-textarea {
+    height: 78px !important;
+    width: 94%;
+	padding: 10px;
+}
+
+div.wpcf7-mail-sent-ok, div.wpcf7-validation-errors {
+    background: #ffffff;
+    width: 60%;
+    margin: auto !important;
+    text-align: center;
+}
+
+div.wpcf7-mail-sent-ok {
+    border: 2px solid #03a9f4 !important;
+}
+
+div.wpcf7-validation-errors {
+    border: 2px solid #ff0202 !important;
+}
+
+/*.slide-form {
+    height: 340px;
+    width: 360px;
+    background-color: #000000d9;
+    display: inline-block;
+}*/
+
+.slide-form {
+    width: 47%;
+    display: block;
+    float: right;
+}
+
+.slide-form img {
+    margin: auto;
+    display: block;
+}
+
+/* ------------------------------------------------------- */
+/* REALESTATE CATEGORY SECTION */
+section.category {
+	padding: 20px 0 100px;
+	background: #f5f5f5;
+}
+
+section.category .wrap, section.sub.sale .wrap {
+    text-align: center;
+}
+
+.column {
+    width: 259px;
+    float: none;
+    text-align: center;
+    margin: 15px;
+    box-shadow: 0px 0px 12px rgba(50, 50, 50, 0.25);
+    display: inline-block;
+	background: #ffffff;
+	border-radius: 10px 10px 0 0;
+	overflow: hidden;
+}
+
+.column a {
+    text-decoration: none;
+}
+
+.column img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.column span {
+    font-size: 24px;
+    padding: 20px 0;
+    display: block;
+    color: #006699;
+}
+
+.column a span:hover {
+    color: #03a9f4;
+}
+
+/* ------------------------------------------------------- */
+
+/* REALESTATE SECTION */
+section.real-estate {
+    padding: 30px 15px 50px;
+}
+
+section.real-estate h3, section.category h3, section.services h3.page-content {
+    text-align: center;
+    color: #003366;
+	padding: 20px 15px;
+	margin: 0;
+}
+
+span.icon {
+    color: #ffffff;
+    background: #03a9f4;
+    padding: 15px 16px;
+    border-radius: 50%;
+    font-size: 24px;
+    height: 20px;
+    width: 20px;
+    display: block;
+    text-align: center;
+    position: absolute;
+}
+
+.item {
+    width: 360px;
+    margin: auto;
+    float: left;
+    padding: 15px;
+}
+
+.column-info {
+    padding-left: 75px;
+}
+
+.column-info h2 {
+    font-weight: 300;
+    color: #006699;
+    font-size: 20px;
+    line-height: 35px;
+    height: 70px;
+	padding-bottom: 20px;
+}
+
+section.real-estate a.btn, section.bottom a.btn {
+    display: table;
+    margin: 20px auto;
+    font-size: 25px;
+    padding: 20px 35px;
+	line-height: 30px;
+    text-align: center;
+}
+
+/* ------------------------------------------------------- */
+/* FOOTER SECTION */
+.footer-widgets {
+    border-top: #b3b7b8 3px solid;
+    padding: 15px;
+}
+
+.footer-widgets .nav ul.menu {
+    font-size: 12px;
+}
+
+.footer-widgets .nav ul.menu li {
+    padding: 10px;
+}
+
+.footer-widgets .nav ul.menu li a {
+    text-transform: capitalize !important;
+    font-weight: 600;
+    color: #1d3763;
+}
+
+.footer-bar {
+    background: #1d3763;
+    color: #ffffff;
+    font-size: 12px;
+	padding: 0 15px;
+}
+
+.wrap.f-c {
+    padding: 10px 15px;
+    display: block;
+}
+
+.footer-column, .footer-widgets .nav, .footer-widgets a.logo{
+    width: 49%;
+    display: inline-block;
+	vertical-align: middle;
+}
+
+.footer-column.right, .footer-widgets a.logo {
+    text-align: right;
+	width: 50%;
+}
+
+.footer-column.right span {
+    padding: 0 15px;
+}
+
+.footer-column.right img {
+    vertical-align: middle;
+}
+
+
+
+/* ------------------------------------------------------- */
+/* ABOUT PAGE */
+.gt-box {
+    position: relative;
+    display: block;
+    margin: 40px 0;
+}
+
+.gt-text {
+    width: 49%;
+    padding: 16px 0;
+    color: #ffffff;
+    text-align: center;
+    float: right;
+}
+
+.gt-text .content {
+    padding: 0 20px;
+}
+
+.gt-box img {
+    background-size: contain;
+    float: left;
+    width: 46%;
+}
+
+.gt-text span {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* ------------------------------------------------------- */
+/* SERVICES PAGE */
+section.sub.sale {
+    padding: 75px 25px 55px;
+}
+
+section.bottom {
+    padding-bottom: 35px;
+}
+
+.main-content.service {
+    padding: 30px 100px;
+    text-align: center;
+}
+
+.main-content.service h3 {
+    color: #003366;
+	line-height: 30px;
+}
+
+.main-content span.bc {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    color: #003366;
+    line-height: 32px;
+}
+
+.main-content.request {
+    padding-bottom: 20px;
+}
+
+.cs-box {
+    width: 345px;
+    text-align: center;
+    margin: 30px 20px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.cs-content {
+    padding: 60px 40px 30px;
+    background: #ffffff;
+    box-shadow: 0px 0px 12px rgba(50, 50, 50, 0.25);
+    text-align: left;
+    min-height: 288px;
+}
+
+.cs-box .cs-title {
+    padding: 10px 20px;
+    background: #03a9f4;
+    border-radius: 30px;
+    width: 230px;
+    margin: -86px auto 30px;
+    clear: both;
+}
+
+.cs-box:nth-child(1) .cs-title {
+    background-color: #26c6da;
+}
+
+.cs-box:nth-child(3) .cs-title {
+    background-color: #6291c1;
+}
+
+.cs-title h2 {
+    font-size: 24px;
+    font-weight: 100;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+/* ------------------------------------------------------- */
+/* FAQ PAGE */
+section.faq {
+    background: #f5f5f5;
+    padding: 40px 25px 60px;
+}
+
+section.faq .content-box {
+    margin: 25px 15px;
+    padding: 50px 90px 50px 60px;
+}
+
+section.faq .column-info h2 {
+    height: unset;
+    padding: 10px 0;
+}
+
+/* ------------------------------------------------------- */
+/* ABOUT US PAGE */
+section.page-header.about {
+    padding: 45px 0;
+    min-height: 395px;
+}
+
+section.services {
+    background: #f5f5f5;
+    padding: 20px 25px 40px;
+    text-align: center;
+}
+
+.service-box {
+    background: #ffffff;
+    box-shadow: 0px 0px 12px rgba(50, 50, 50, 0.25);
+    width: 259px;
+    text-align: center;
+    margin: 30px 15px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    min-height: 203px;
+    border-top: #00bcd4 4px solid;
+}
+
+.service-box .content {
+    padding: 30px;
+    font-size: 16px;
+}
+
+span.number {
+    color: #03a9f41c;
+    font-size: 150px;
+    text-align: left;
+    position: absolute;
+    font-weight: 700;
+    letter-spacing: -9px;
+    bottom: -16px;
+    line-height: 150px;
+    left: -5px;
+}
+
+section.objectives {
+    padding: 55px 0;
+}
+
+section.objectives h3 {
+    text-align: center;
+    color: #ffffff;
+	padding: 20px 15px;
+	margin: 0;
+}
+
+.mv {
+    padding: 0 15px;
+}
+
+.mission {
+    float: left;
+}
+
+.vision {
+    float: right;
+}
+
+.vision, .mission {
+    background-color: #00beef8f;
+    padding: 5px 68px 20px;
+    position: relative;
+	margin: 5px 0;
+}
+
+.mv .mission::after {
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 58px;
+    right: -58px;
+    top: 0;
+    background: url(http://fastprohomebuyers.com/wp-content/uploads/2017/12/arrow.png) center right no-repeat transparent;
+}
+
+.mv .vision::before {
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 61px;
+    left: -61px;
+    top: 0;
+    background: url(http://fastprohomebuyers.com/wp-content/uploads/2017/12/arrow2.png) center right no-repeat transparent;
+}
+
+section.objectives .text {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 25px;
+    width: 375px;
+    text-align: center;
+}
+
+.core {
+    background-color: #0288d180;
+    margin: 15px;
+    padding: 10px 65px 50px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.mobile-content {
+    display: none;
+}
+
+
+/* ------------------------------------------------------- */
+/* FORECLOSURE PAGE */
+section.bottom.learn {
+    min-height: 350px;
+}
+
+.main-content.request {
+    padding-bottom: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.main-content.request .content {
+    padding: 10px 70px 20px;
+    font-size: 16px;
+}
+
+.main-content.request a.btn {
+    display: inline-block;
+    margin: 5px 10px;
+    text-align: center;
+    font-size: 13px;
+    padding: 5px 20px;
+    line-height: 30px;
+}
+
+
+/* ------------------------------------------------------- */
+/* 404 PAGE */
+.content-box.error-page {
+    padding: 100px 50px;
+}
+
+.content-box.error-page h1.header {
+    color: #03a9f4;
+    padding: 20px 0 50px;
+}
+
+.content-box.error-page .text {
+    font-size: 16px;
+    color: #1d3763;
+}
+
+a.link {
+    text-decoration: none;
+    font-weight: 700;
+    color: #03a9f4;
+}
+
+a.link:hover {
+    color: #016d9c;
+}
+
+/* ------------------------------------------------------- */
+/* CONTACTUS PAGE */
+section.cf {
+    padding: 50px 0 70px;
+}
+
+.fields {
+    float: left;
+    padding: 20px;
+	width: 60%;
+}
+
+.address {
+    float: left;
+    display: block;
+    width: 35%;
+}
+
+.fields .cform {
+    max-width: 600px;
+}
+
+.cform p, .cform span.wpcf7-list-item {
+    color: #000000;
+}
+
+.info {
+    padding: 20px 0 10px 20px;
+    font-size: 18px;
+}
+
+.info a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.info .fa {
+    color: #2e2e2e;
+}
+
+/* ------------------------------------------------------- */
+/* ESTATE FORM */
+.cfield {
+    width: 50%;
+    float: left;
+}
+
+.cfield span, .ffield span {
+    margin-left: 6px;
+}
+
+.cfield input.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required, .cfield input.wpcf7-form-control.wpcf7-text {
+    width: 93%;
+    display: block;
+    margin: 10px auto 20px;
+    padding: 10px;
+}
+
+.ffield textarea.wpcf7-form-control.wpcf7-textarea.wpcf7-validates-as-required {
+    width: 97%;
+    border: #a9a9a9 1px solid;
+    margin: 10px auto 20px;
+    padding: 10px;
+    display: block;
+    height: auto !important;
+}
+
+.send input.wpcf7-form-control.wpcf7-submit {
+    display: table;
+    margin: auto;
+    padding: 15px 45px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #03a9f4;
+    border: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}

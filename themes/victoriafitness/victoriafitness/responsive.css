@@ -1,0 +1,452 @@
+@charset "utf-8";
+
+/* CI Document */
+
+@media screen and (max-width:1453px) {
+	.program-text .content {
+	    min-height: 210px;
+	}
+}
+
+@media screen and (max-width:1400px) {
+	.col-sm-4.email {
+	    padding: 0;
+	}
+	.about-text div, .testimony-box .content div {
+	    text-align: justify;
+	}
+	.designed {
+	    text-align: center;
+	}
+	
+}
+
+@media screen and (max-width:1396px) {
+	.program-text .content {
+	    min-height: 250px;
+	}
+}
+
+@media screen and (max-width:1305px) {
+	.nav>li>a {
+		padding: 50px 0 40px 20px;
+	}
+}
+
+@media screen and (max-width:1250px) {
+	.program-text .content {
+	    min-height: 270px;
+	}
+}
+
+
+@media screen and (max-width:1200px) {
+	.nav.navbar-nav {
+	    float: none;
+	    margin: 0 auto;
+	    display: table;
+	}
+	.logo {
+	    margin: auto;
+	}
+	.navbar-nav>li>a {
+	    padding: 15px;
+	}
+	.plan-content {
+	    min-height: 370px;
+	}
+	.page-content .img {
+	    max-width: 350px;
+	}
+	.page-content.pc .img {
+	    max-width: unset;
+	}
+	.page-text {
+	    padding-right: 198px;
+	}
+	.page-content.right .img, .page-content.left .img {
+		max-width: 300px;
+	}
+	.page-content.right .page-text {
+		padding-right: 170px;
+	}
+	.page-content.left .page-text {
+		padding-left: 170px;
+	}
+	.pc-title {
+	    padding-left: 30px;
+	}
+	.page-text div ul li {
+	    text-indent: 0;
+	}
+	.program-includes {
+	    padding: 50px 30px;
+	}
+	section.banner, .banner-box, .banner-img{
+		margin-top: 0;
+	}
+	.program-text .content {
+	    min-height: 180px;
+	}
+
+}
+
+
+@media screen and (max-width:1150px) {
+	.banner-text {
+	    padding-left: 20px;
+	}
+	.slick-dots {
+		padding-left: 0;
+	}
+}
+
+
+@media screen and (max-width:1024px) {
+	
+	.banner-text {
+	    padding: 30px 0 50px;
+	    text-align: center;
+	}
+	.banner-text div {
+	    padding: 10px 0;
+	}
+	.banner-img {
+	    display: none;
+	}
+	.slick-dots {
+		text-align: center;
+	}
+}
+
+
+@media screen and (max-width:991px) {
+	.about-text {
+	    padding: 30px 40px;
+	}
+	.plan-content {
+	    min-height: 270px;
+	}
+	.testimony-box {
+	    padding-top: 30px;
+	}
+	.testimonials .review-container {
+		padding: 20px 0 0;
+	}
+	.plan-content div {
+	    text-align: justify;
+	}
+	span.copyright {
+	    text-align: center;
+	    display: block;
+	}
+	.fieldh {
+		width: 100%;
+	    margin: 10px 20px 10px 0;
+	}
+	.fieldh input, .field textarea {
+		width: 100%;
+	    background-color: #ffffff99;
+	}
+	.page-content {
+	    background-color: #ffffff;
+	    margin-top: -50px;
+	}
+	.page-content.pc .img .register-btn {
+	    padding: 40px 0;
+	}
+	.page-content .img, .page-content.right .img, .page-content.left .img {
+	    float: none;
+	    margin: auto;
+	    max-width: 500px;
+	}
+	.page-text, .page-content.right .page-text, .page-content.left .page-text {
+	    padding: 30px 30px 50px;
+	    margin: auto;
+	}
+	.page-content.left .page-text {
+	    margin: auto !important;
+	}
+	.program-description {
+	    max-width: unset;
+	    padding-top: 20px;
+	    border-top: 1px solid #cacaca;
+	}
+	.program-description, .program-includes {
+	    width: 100%;
+	    float: none;
+	    padding: 50px;
+	}
+	.pc-include {
+	    width: 50%;
+	}
+	.pc-include {
+	    float: left;
+	}
+	.other-include {
+	    /* float: right; */
+	}
+	.continue {
+	    bottom: 54px;
+	}
+	
+}
+
+@media screen and (max-width:837px) {
+	.navbar-nav>li>a {
+	    padding: 15px 10px;
+	}
+}
+
+@media screen and (max-width:768px) {
+	.top .phone, .top .email, .top .login {
+	    text-align: center;
+	}
+	.top .phone {
+	    padding-top: 10px;
+	}
+	.top .admin .phone a {
+	    font-size: 26px;
+	    font-weight: 700;
+	}
+	.navbar-nav>li>a {
+	    padding: 15px 13px;
+	}
+	section.about {
+	    margin-top: 0;
+	}
+	.page-content .img, .page-content.right .img, .page-content.left .img {
+	    max-width: unset;
+	}
+	.page-id-45 .content-pages {
+	    padding: 50px 20px;
+	}
+	.page-content.pc .page-text {
+	    background: unset;
+	}
+	.page-content.pc .img {
+	    float: none;
+	}
+	/* ------------------------------------------------------- */
+	/* YOUTUBE PAGE */
+	div#ytwd_thumbnails6 {
+	    text-align: center !important;
+	}
+	.ytwd_gallery6 .ytwd_gallery_item6 {
+	    min-width: 200px !important;
+	    display: inline-block !important;
+	    float: none !important;
+	    text-align: center !important;
+	}
+	.ytwd_gallery6 .ytwd_gallery_item6 .ytwd_item_title6 {
+	    font-size: 12px !important;
+	}
+	/* ------------------------------------------------------- */
+	/* CHECKOUT PAGE */
+	.page-id-145 .content-pages, .page-id-93 .content-pages {
+		padding: 22px 15px 50px;
+	}
+	.continue {
+	    left: 180px;
+	}
+	.slick-dots {
+		text-align: center;
+	}
+}
+
+
+@media screen and (max-width:767px) {
+	.program-text .content {
+	    min-height: unset;
+	    padding-bottom: 20px;
+	}
+	.how-it-works .plans {
+	    padding: 20px 0 0;
+	}
+	.plan-content {
+	    min-height: unset;
+	}
+	.bottom .navbar-header {
+	    display: none;
+	}
+	.pc-include, .other-include {
+	    float: none;
+	    margin: auto;
+	    width: 100%;
+	}
+	
+	.nav.navbar-nav {
+	    display: block;
+	    background-color: #3944511f
+	}
+	.nav > li > a {
+	    padding: 10px 0 !important;
+	}
+	.navbar-nav>li>a {
+	    text-align: center;
+	}
+	.banner-text {
+	    height: 400px;
+	}
+	.slick-dots {
+	    bottom: 5px;
+	}
+	.content-pages .two .featured-vid {
+	    padding: 20px;
+	}
+}
+
+@media screen and (max-width:678px) {
+	
+}
+
+
+@media screen and (max-width:598px) {
+	.about-text {
+	    padding: 30px 20px;
+	}
+	.about-text h2 {
+	    text-align: center;
+	}
+	.about-text a.btn-primary {
+	    text-align: center;
+	    display: table;
+	    margin: auto;
+	}
+	h1.heading {
+	    text-align: center;
+	}
+	/*.page-text {
+	    padding: 30px 0 50px;
+	}*/
+	.program h2 {
+		text-align: center;
+	}
+	.register-btn {
+		display: table;
+		margin: auto;
+	}
+	.register-btn a.btn.price {
+		padding: 6px 50px 7px 10px;
+		margin-right: -45px;
+	}
+	.register-btn a.btn.btn-primary.btn-lg.active {
+		padding: 10px 15px;
+	}
+	.page-content.right .page-text, .page-content.left .page-text {
+		padding: 30px 20px 50px;
+	}
+	.content-post {
+		padding: 50px 20px;
+	}
+	.program-description, .program-includes {
+	    padding: 50px 30px;
+	}
+	.program-includes div {
+	    text-align: left !important;
+	}
+	.pc-title {
+	    padding-left: 10px;
+	}
+	.pc-include, .other-include {
+	    padding: 12px 15px;
+	}
+	.program-includes .register-btn {
+	    text-align: center !important;
+	}
+	.slick-dots {
+	    display: none !important;
+	}
+	.page-id-144 .content-pages, .single-video .content-pages {
+	    padding: 0;
+	}
+	.content .heading h3.title, .content .heading span.date {
+	    padding: 0 10px;
+	}
+	.content-pages .two .featured-vid {
+	    padding: 20px 50px;
+	}
+	
+}
+
+
+@media screen and (max-width:463px) {
+	.plan-content {
+	    margin-left: 20px;
+	    padding: 10px 30px;
+	}
+	.plan-content h3 {
+	    padding-left: 30px;
+	}
+	.testimony-box .content {
+	    padding: 150px 30px 50px;
+	}
+	.contact-info {
+	    text-align: center;
+	}
+	.page-text div ul li {
+		text-indent: 20px;
+	}
+	.program-description, .program-includes {
+	    padding: 20px;
+	}
+	.ytwd_gallery6 .ytwd_gallery_item6 {
+	    min-width: 200px;
+	}
+	.continue {
+	    display: table;
+	    position: unset;
+	    margin: auto;
+	}
+	input#paypalbutton {
+	    display: table;
+	    margin: 50px auto 0;
+	    padding: 10px 62px;
+	}
+	.banner-text {
+	    height: unset;
+	    padding: 30px 0 0;
+	}
+	.banner-text span {
+	    font-size: 60px;
+	    line-height: 80px;
+	}
+	.banner-text h1 {
+	    font-size: 40px;
+	}
+}
+
+
+@media screen and (max-width:414px) {
+	span.price {
+		display: block;
+		padding: 6px 20px;
+		margin: auto;
+		text-align: center;
+	}
+	.page-id-145 .content-pages, .page-id-93 .content-pages {
+		padding: 20px 0px;
+	}
+	#shopping_cart {
+		padding: 0 !important;
+	}
+	tr.cart_labels th {
+		font-size: 12px;
+	}
+	tr#item_in_cart th {
+	    text-align: right;
+	    padding-right: 20px;
+	    padding-bottom: 20px;
+	}
+	.vid-play {
+	    padding: 0;
+	}
+}
+
+
+@media screen and (max-width:320px) {
+
+}
+
+
+

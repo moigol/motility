@@ -1,0 +1,183 @@
+@charset "utf-8";
+/* CI Document */
+
+@media screen and (max-width:1160px) {
+	/* HEADER */
+	section.location .wrapper {
+		width: 95%;
+	}
+	
+	/* SOCIAL SECTION */
+	.left.fb {
+		width: 47.5%;
+	}
+	section.social .ig img {
+		width: 15%;
+	}
+	
+	/* LOCATION SECTION */
+	section.location .map {
+		width: 58%;
+	}
+	
+	/* FOOTER */
+	.footer.left ul.menu li a, .footer.right span {
+		font-size: 12px;
+	}
+	.footer.left ul.menu li {
+		padding-right: 15px;
+	}
+}
+
+@media screen and (max-width:1024px) {
+	/*ABOUT SECTION*/
+	h2.heading {
+		padding-bottom: 30px;
+	}
+	section.about p.a-content {
+		line-height: 18px;
+		padding-bottom: 20px;
+	}
+}
+
+@media screen and (max-width:998px) {
+	/* HEADER */
+	header ul.menu {
+		width: 65%;
+	}
+	
+	/* BANNER */
+	.banner-content h1.header {
+		font-size: 50px;
+		line-height: 60px;
+		padding: 0 20px;
+	}
+	sup {
+		margin-top: -5px;
+	}
+	/* FOOTER */
+	.footer.left {
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+	.footer.left ul.menu li {
+		padding: 15px 8px;
+	}
+	.social-icon {
+		width: 100%;
+		float: none;
+		text-align: center;
+		padding: 0;
+	}
+	.footer.right {
+		width: 100%;
+		float: none;
+		text-align: center;
+	}
+	
+}
+
+@media screen and (max-width:768px) {
+	/* HEADER */
+	header ul.menu {
+		display: none;
+	}
+	/* BANNER */
+	.slide {
+		background-size: cover;
+	}
+	.banner-content h1.header {
+		font-size: 8vw;
+		line-height: 9vw;
+	}
+	sup {
+		font-size: 30px;
+	}
+	/* ABOUT SECTION */
+	section.about img {
+		width: 100%;
+		margin: auto;
+		float: none;
+	}
+	section.about p.a-content {
+		line-height: 18px;
+		padding: 20px 30px;
+		margin: auto;
+		text-align: justify;
+	}
+	/* CARDS SECTION */
+	section.cards {
+		margin: 0;
+	}
+	section.cards h2.heading {
+		margin: 10px 0 0;
+		padding: 0 20px;
+		line-height: 45px;
+	}
+	p.c-content {
+		height: 100px;
+	}
+	section.about a.btn {
+		display: table;
+		margin: 20px auto;
+	}
+	.left.gift, .right.loyalty {
+		width: 92%;
+		float: none;
+		margin: 0 auto;
+		padding: 20px 0;
+	}
+	.left.fb, .left.tw {
+		float: none;
+		width: 100%;
+		margin: 5px 0;
+	}
+	
+	/* LOCATION SECTION */
+	section.location .address {
+		width: 90%;
+		float: none;
+		padding: 5%;
+	}
+	.address h4 {
+		text-align: center;
+	}
+	.address .a-icon {
+		float: none;
+		display: table;
+		margin: auto;
+	}
+	.address .add-info {
+		float: none;
+		display: table;
+		margin: auto;
+		text-align: center;
+	}
+	section.location .map {
+		width: 100%;
+		float: none;
+	}
+	
+	/*FOOTER*/
+	.footer.left {
+		display: none;
+	}
+}
+
+@media screen and (max-width:568px) {
+	/*BANNER*/
+	.banner-content {
+		float: none;
+		display: block;
+		padding: 50px 20px;
+		width: auto;
+	}
+}
+
+@media screen and (max-width:389px) {
+	/*FOOTER*/
+	.footer.right span {
+		padding-right: 0px;
+	}
+}
