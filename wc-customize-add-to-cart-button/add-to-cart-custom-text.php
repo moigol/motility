@@ -43,13 +43,10 @@
 */
 
 defined ('ABSPATH') or exit;
-
 if (!class_exists ('Mo_AddToCart')) :
 
 	Class Mo_AddToCart {
-
 		private static $instance;
-
 		private function __construct () {
 
 			$this->name   = __('Customize Add to Cart Button', 'customize-add-to-cart-button');
@@ -70,25 +67,25 @@ if (!class_exists ('Mo_AddToCart')) :
 			add_action ('init', [$this, 'init_plugin'], 10);
 			add_action ('admin_notices' , [$this, 'help_notice'], 10);
 			add_filter ('plugin_action_links', [$this, 'load_action'], 10, 2);
-			}
+		}
 
 		public function __clone () {
 
 			_doing_it_wrong (__FUNCTION__, sprintf (__('You cannot clone instances of %s.', 'customize-add-to-cart-button'), get_class ($this)), '2.1.2');
-			}
+		}
 
 		public function load_archives ($archives, $cats) {
 
 			foreach ($archives as $archive)
 				require (sprintf ('%s/%s.php', $this->dirname, $archive));
-			}
+		}
 
 		public function init_plugin () {
 
 			if ($this->woocommerce_active())
 				foreach ($this->clases as $clase)
 					new $clase;
-			}
+		}
 
 		private function woocommerce_active () {
 
@@ -106,7 +103,7 @@ if (!class_exists ('Mo_AddToCart')) :
 				}
 
 			return true;
-			}
+		}
 
 		public function help_notice () {
 
@@ -149,10 +146,8 @@ if (!class_exists ('Mo_AddToCart')) :
 				self::$instance = new self();
 
 			return self::$instance;
-			}
-
 		}
-
+	}
 endif;
 
 Mo_AddToCart::instance();
