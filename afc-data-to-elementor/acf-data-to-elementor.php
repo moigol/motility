@@ -54,18 +54,12 @@ if (!class_exists ('Mo_ACFDataElementor')) {
 			register_activation_hook (__FILE__, function () {
 				set_transient ('acf-data-to-elementor-active', true, 5);
 				}, 10 );
-
-			//add_action ('init', [$this, 'init_plugin'], 10);
 			add_shortcode( 'acftoelementor', [$this, 'load_shortcodes'] );
 
 		}
 
 		public function __clone () {
 			_doing_it_wrong (__FUNCTION__, sprintf (__('You cannot clone instances of %s.', 'acf-data-to-elementor'), get_class ($this)), '1.0.0');
-		}
-
-		public function init_plugin () {
-			
 		}
 
 		public function load_shortcodes ( $atts ) 
@@ -124,15 +118,12 @@ if (!class_exists ('Mo_ACFDataElementor')) {
 		}
 
 		public static function instance () {
-
 			if (null === self::$instance)
 				self::$instance = new self();
 
 				return self::$instance;
 			}
-
 		}
-
 }
 
 Mo_ACFDataElementor::instance();
